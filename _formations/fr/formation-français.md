@@ -6,7 +6,7 @@ cours: css
 
 {% for formation in site.data.formations %}
 	{% if page.cours == formation.cours %}
-<a href="/cours/{{ formation.date | replace: ' ', '-'}}/">Lien</a>
+<a href="/{{ page.lang }}/contact/{{ formation.cours | replace: ' ', '-'}}/{{ formation.professeur | replace: ' ', '-'}}/">Lien</a>
 	{{ formation.cours }}
 	{{ formation.professeur }}
 	{{ formation.date }}

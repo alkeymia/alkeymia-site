@@ -1,32 +1,60 @@
 <meta charset="utf-8">
+<link href="http://gmpg.org/xfn/11" rel="profile">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-<meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+{% seo title=false %}
+<link type="text/plain" rel="author" href="/humans.txt" />
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS Feed" href="https://alkeymia.io/feed/"/>
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 <!-- CSS -->
-<link rel="stylesheet" href="{{ site.baseurl }}/css/owl.carousel.css" />
-<link rel="stylesheet" href="{{ site.baseurl }}/css/bootstrap.min.css" />
-<link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome.min.css" />
-<link rel="stylesheet" href="{{ site.baseurl }}/css/airspace.css" />
-<link rel="stylesheet" href="{{ site.baseurl }}/css/style.css" />
-<link rel="stylesheet" href="{{ site.baseurl }}/css/ionicons.min.css" />
-<link rel="stylesheet" href="{{ site.baseurl }}/css/animate.css" />
-<link rel="stylesheet" href="{{ site.baseurl }}/css/responsive.css" />
-<link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" />
+<link rel="preload" href="https://fonts.googleapis.com" />
+<!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Volkhov:400italic" /> -->
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />
 
 <!-- Js -->
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-<script src="{{ site.baseurl }}/js/bootstrap.min.js"></script>
-<script src="{{ site.baseurl }}/js/owl.carousel.min.js"></script>
-<script src="{{ site.baseurl }}/js/plugins.js"></script>
-<script src="{{ site.baseurl }}/js/min/waypoints.min.js"></script>
-<script src="{{ site.baseurl }}/js/jquery.counterup.js"></script>
+<script src="{{ site.url }}/assets/js/fetch-inject.js"></script>
+<!-- <script>
 
+	// Get the selected value
+	var countryCode  = navigator.language || navigator.userLanguage;
+	var languageCode = document.documentElement.lang
 
-<script src="{{ site.baseurl }}/js/main.js"></script>
+  // Test if localStorage is supported by the user's browser
+  if (typeof(Storage) !== "undefined") {
+    // localStorage is available
+    localStorage.setItem("countryCode", countryCode);
+	}
+	
+	if (typeof(Storage) !== "undefined") {
+		var countryCode = localStorage.getItem("countryCode");
+		{% assign roro =  page.path | replace: page.lang, 'ddd' %}
+		if (countryCode.substring(0, 2) !== languageCode) {
+			window.location.href = '{{ site.url }}/' + countryCode.substring(0, 2) // + '{{ page.url | replace: page.lang, '' | replace: '//','/' }}';
+		}
+	}
+</script> -->
+<script>
+fetchInject([
+	'{{ site.baseurl }}/assets/js/main.js'
+	], fetchInject([
+		'{{ site.baseurl }}/assets/js/bootstrap.min.js',
+		'{{ site.baseurl }}/assets/js/owl.carousel.min.js',
+		'{{ site.baseurl }}/assets/js/plugins.js',
+		'{{ site.baseurl }}/assets/js/min/waypoints.min.js',
+		'{{ site.baseurl }}/assets/js/jquery.counterup.js'
+		], fetchInject([
+			'{{ site.baseurl }}/assets/js/vendor/jquery-1.10.2.min.js'
+			],
+))).then(() => {
+	
+})
+</script>
+
+{% include favicons.html %}
 
 <!--
 /*

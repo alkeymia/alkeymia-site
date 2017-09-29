@@ -1,29 +1,85 @@
 
-exclude:
-  - "/vendor/"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "README.md"
-  - "LICENSE.md"
-  - "*.gemspec"
-
-keep_files:
-  - "CNAME"
-  - ".git"
-  - ".gitignore"
-
 
 # Site settings
-title: Airspace
-description: "A free HTML5 agency template"
-url: "https://jsebrien.github.io" # the base hostname & protocol for your site
+title: Alkeymia
+description: "Cours en ligne"
+url: "https://alkeymia.io" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
 baseurl: ""
+##permalink: /:path/
+
+timezone: Europe/Paris
+mainColor: '#000000'
 cover: "/assets/cover.png"
 logo: "/assets/logo.png"
 
+incremental: true
+profile: true
+
+ # seo-tag
+author: alkeymia
+twitter:
+  username: alkeymia
+social:
+  type: personn
+  name: alkeymia
+  links:
+    - https://twitter.com/alkeymia
+    - https://github.com/alkeymia
+
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+
+feed:
+  path: feed
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+collections:
+  formations:
+    output: true
+    order: date asc
+    permalink: formations/:title
+    sitemap: false
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: "page"
+  - scope:
+      path: "_formations/fr"
+      type: "formations"
+    values:
+      lang: "fr"
+      permalink: fr/:collection/:title/
+  - scope:
+      path: "_formations/en"
+      type: "formations"
+    values:
+      lang: "en"
+      permalink: en/:collection/:title/
+  - scope:
+      path: "contact/en"
+      type: "contact"
+    values:
+      permalink: en/toto/:title/
+
+
+# Plugin: generate pages from Yaml
+page_gen-dirs: true # uncomment, if you prefer to generate named folders
+page_gen:
+  - data: 'formations'
+    template: 'page'
+    name: 'professeur'
+    lang: 'lang'
+    cours: 'cours'
+    dir: 'contacts'
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
@@ -35,3 +91,30 @@ descriptions:
 
   - cat: dummy
     desc: "Just some placeholder posts, lorem ipsum and the rest."
+
+# Plugin :: see gemfle file
+plugins:
+  - jekyll-github-metadata
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-default-layout
+
+# File not to compile
+exclude:
+  - .cache
+  - .editorconfig
+  - .gitattributes
+  - .gitignore
+  - "/vendor/"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "README.md"
+  - "LICENSE.md"
+  - "*.gemspec"
+
+# File to keep
+keep_files:
+  - "CNAME"
+  - ".git"
+  - ".gitignore"

@@ -26,7 +26,7 @@ module Jekyll
     # - `name` is the key in `data` which determines the output filename
     # - `template` is the name of the template for generating the page
     # - `extension` is the extension for the generated file
-    def initialize(site, base, index_files, dir, data, name, lang, cours, template, extension)
+    def initialize(site, base, index_files, dir, data, name, lang, theme, template, extension)
       @site = site
       @base = base
 
@@ -37,7 +37,7 @@ module Jekyll
       # want to generate named folders or not
       filename = sanitize_filename(data[name]).to_s
       if index_files
-        @dir = data[lang] + "/" + dir + "/" + data[cours] + "/" + (index_files ? "/" + filename + "/" : "")
+        @dir = data[lang] + "/" + dir + "/" + data[theme] + "/" + (index_files ? "/" + filename + "/" : "")
         @name =  "index" + "." + extension.to_s
       else
         @dir = dir
@@ -74,7 +74,7 @@ module Jekyll
           template = data_spec['template'] || data_spec['data']
           name = data_spec['name']
           lang = data_spec['lang']
-          cours = data_spec['cours']
+          theme = data_spec['theme']
           dir = data_spec['dir'] || data_spec['data']
           extension = data_spec['extension'] || "html"
 
@@ -90,7 +90,7 @@ module Jekyll
               end
             end
             records.each do |record|
-              site.pages << DataPage.new(site, site.source, index_files, dir, record, name, lang, cours, template, extension)
+              site.pages << DataPage.new(site, site.source, index_files, dir, record, name, lang, theme, template, extension)
             end
           else
             puts "error. could not find template #{template}" if not site.layouts.key? template

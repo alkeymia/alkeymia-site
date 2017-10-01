@@ -1,10 +1,30 @@
-- cours: css
-  professeur: Jean Dubosc
+- theme: ElasticSearch
+  teacher: Jean Dubosc
   date: 11 octobre 2017
-  ville: Grenoble
-  lang: en
-- cours: css
-  professeur: Thierry Lavoie
+  city: Grenoble
+  lang: fr
+- theme: ElasticSearch
+  teacher: Thierry Lavoie
   date: 13 novembre 2017
-  ville: Toulouse
+  city: Toulouse
+  lang: fr
+- theme: Cassandra
+  teacher: Jean Dubosc
+  date: 11 octobre 2017
+  city: Grenoble
+  lang: fr
+- theme: Cassandra
+  teacher: Thierry Lavoie
+  date: 13 novembre 2017
+  city: Toulouse
+  lang: fr
+- theme: Kafka
+  teacher: Jean Dubosc
+  date: 11 octobre 2017
+  city: Grenoble
+  lang: fr
+- theme: Kafka
+  teacher: Thierry Lavoie
+  date: 13 novembre 2017
+  city: Toulouse
   lang: fr

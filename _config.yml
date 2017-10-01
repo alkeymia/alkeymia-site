@@ -51,7 +51,34 @@ defaults:
       path: ""
       type: pages
     values:
-      layout: "page"
+      layout: "default"
+  - scope:
+      path: "en"
+      type: pages
+    values:
+      lang: en
+  - scope:
+      path: "fr"
+      type: pages
+    values:
+      lang: fr
+  - scope:
+      path: "_posts/en"
+      type: posts
+    values:
+      lang: en
+      permalink: en/:year/:month/:day/:title/
+  - scope:
+      path: "_posts/fr"
+      type: posts
+    values:
+      lang: fr
+      permalink: fr/:year/:month/:day/:title/
+  - scope:
+      path: "_formations"
+      type: "formations"
+    values:
+      layout: formations
   - scope:
       path: "_formations/fr"
       type: "formations"
@@ -64,21 +91,15 @@ defaults:
     values:
       lang: "en"
       permalink: en/:collection/:title/
-  - scope:
-      path: "contact/en"
-      type: "contact"
-    values:
-      permalink: en/toto/:title/
-
 
 # Plugin: generate pages from Yaml
 page_gen-dirs: true # uncomment, if you prefer to generate named folders
 page_gen:
   - data: 'formations'
-    template: 'page'
-    name: 'professeur'
+    template: 'subscribe'
+    name: 'teacher'
     lang: 'lang'
-    cours: 'cours'
+    theme: 'theme'
     dir: 'contacts'
 
 # Google analytics

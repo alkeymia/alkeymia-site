@@ -3,6 +3,16 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12">
+          <div class="footer-manu">
+            <ul>
+              {% assign navigation = site.html_pages | sort:"weight" %}
+              {% for menu in navigation %}{% if menu.path contains page.lang %}{% if menu.navigation_footer %}{% if menu.lang == page.lang %}
+                <li>
+                  <a class="page-link{% if page.title == menu.title %} active{% endif %}" href="{{ menu.url }}" class="{{ menu.lang }}">{{ menu.navigation_footer }}</a>
+                </li>
+              {% endif %}{% endif %}{% endif %}{% endfor %}
+            </ul>
+          </div>
         <p>Copyright &copy; Design &amp; Developed by <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>
       </div>
     </div>

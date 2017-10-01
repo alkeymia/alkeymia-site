@@ -17,6 +17,12 @@ body {
   font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
 }
+.container {
+  padding-bottom: 2rem;
+}
+.container-narrow {
+  max-width: 70rem;
+}
 h1,
 h2,
 h3,
@@ -137,9 +143,6 @@ font header .navbar-default .navbar-nav li a:hover {
 /*--
 	wrapper Start
 --*/
-#intro {
-  padding: 100px 0;
-}
 #intro .block h2 {
   padding-top: 35px;
   line-height: 27px;
@@ -381,6 +384,7 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #E3E3E4;
   margin: 0 auto;
   padding-left: 90px;
+  padding-right: 90px;
   text-align: center;
 }
 #global-header .block h1 {
@@ -522,6 +526,7 @@ font header .navbar-default .navbar-nav li a:hover {
   position: absolute;
   top: 50%;
   left: 10%;
+  right: 10%;
   -webkit-transform: translate(0%, 50%);
   -moz-transform: translate(0%, 50%);
   -ms-transform: translate(0%, 50%);
@@ -649,33 +654,38 @@ font header .navbar-default .navbar-nav li a:hover {
 /*--
 	contact-form Start
 --*/
-#contact-form {
+#form {
+  padding-top: 70px;
+  padding-bottom: 35px;
+  max-width: 50rem;
+}
+#form {
   padding-top: 70px;
   padding-bottom: 35px;
 }
-#contact-form .block form .form-group {
+#form .block form .form-group {
   padding-bottom: 15px;
   margin: 0px;
 }
-#contact-form .block form .form-group .form-control {
+#form .block form .form-group .form-control {
   background: #F6F8FA;
   height: 60px;
   border: 1px solid #EEF2F6;
   box-shadow: none;
   width: 100%;
 }
-#contact-form .block form .form-group-2 {
+#form .block form .form-group-2 {
   padding-bottom: 15px;
   margin: 0px;
 }
-#contact-form .block form .form-group-2 textarea {
+#form .block form .form-group-2 textarea {
   background: #F6F8FA;
   height: 135px;
   border: 1px solid #EEF2F6;
   box-shadow: none;
   width: 100%;
 }
-#contact-form .block button {
+#form .block button {
   width: 100%;
   height: 60px;
   background: #47424C;

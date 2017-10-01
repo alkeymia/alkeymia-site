@@ -17,8 +17,7 @@
 
 <!-- Js -->
 <script src="{{ site.url }}/assets/js/fetch-inject.js"></script>
-<!-- <script>
-
+<script>
 	// Get the selected value
 	var countryCode  = navigator.language || navigator.userLanguage;
 	var languageCode = document.documentElement.lang
@@ -28,15 +27,14 @@
     // localStorage is available
     localStorage.setItem("countryCode", countryCode);
 	}
-	
+	console.log(window.location.href)
 	if (typeof(Storage) !== "undefined") {
 		var countryCode = localStorage.getItem("countryCode");
-		{% assign roro =  page.path | replace: page.lang, 'ddd' %}
 		if (countryCode.substring(0, 2) !== languageCode) {
-			window.location.href = '{{ site.url }}/' + countryCode.substring(0, 2) // + '{{ page.url | replace: page.lang, '' | replace: '//','/' }}';
+			window.location.href = '{{ site.url }}/' + countryCode.substring(0, 2) + '/'
 		}
 	}
-</script> -->
+</script>
 <script>
 fetchInject([
 	'{{ site.baseurl }}/assets/js/main.js'

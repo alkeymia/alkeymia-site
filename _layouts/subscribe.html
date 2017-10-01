@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<div id="form" class="container">
+	<h1>Inscrivez vous à la session du {{ page.date }}</h1>
+	<p>
+	<strong>Enseignant :</strong> {{ page.teacher }}<br>
+	<strong>Thème :</strong> {{ page.theme }}<br>
+	<strong>Date :</strong> {{ page.date }}<br>
+	<strong>À :</strong> {{ page.city }}
+	</p>
+	<div class="block">
+	<form action="https://formspree.io/julien.sebrien@gmail.com">
+		<div class="form-group">
+			<label>Votre Nom</label>
+			<input type="text" class="form-control" placeholder="ex: Jean Delafontaine">
+		</div>
+		<div class="form-group">
+			<label>Votre adresse email</label>
+			<input type="text" class="form-control" placeholder="ex: jean.delafontaine@mail.com" name="_replyto" >
+		</div>
+		<input type="hidden" name="_subject" value="{{ page.theme }} {{ page.date }} {{ page.teacher }} à {{ page.city }}" />
+		<input type="hidden" name="_language" value="{{ page.lang }}" />
+		<input type="text" name="_gotcha" style="display:none" />
+		<button class="btn btn-default" type="submit">Envoyer un message</button>
+	</form>
+	</div>
+</div>

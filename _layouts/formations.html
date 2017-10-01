@@ -1,0 +1,19 @@
+---
+layout: page
+---
+
+<nav>
+  <ul>
+  {% for formation in site.data.formations %}
+  {% if page.title == formation.theme %}
+    <li>
+      <a href="/{{ page.lang }}/contacts/{{ formation.theme | replace: ' ', '-'}}/{{ formation.teacher | replace: ' ', '-'}}/">
+        {{ formation.date }} - {{ formation.teacher }} - {{ formation.city }}</a>
+    </li>
+  {% endif %}
+  {% endfor %}
+  </ul>
+</nav>
+<hr>
+
+{{ content }}

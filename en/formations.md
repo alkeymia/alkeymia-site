@@ -1,6 +1,5 @@
 ---
 title: Our Work
-lang: en
 navigation: Formations
 weight: 2
 ---
@@ -19,17 +18,6 @@ weight: 2
     </div>
 </section>
 
-<nav>
-  <h3>Liste de pages</h3>
-    <ul>
-  {% for menu in site.formations %}
-  {% if menu.path contains page.lang %}
-  <li></li><a href="{{ menu.url }}">{{ menu.url }}</a></li>
-  {% endif %}
-  {% endfor %}
-    </ul>
-  </nav>
-
     <!-- Portfolio Start -->
 <section id="portfolio-work">
     <div class="container">
@@ -38,89 +26,31 @@ weight: 2
             <div class="block">
               <div class="portfolio-menu">
                 <ul>
-                    <li class="filter" data-filter="all">Everything</li>
-                    <li class="filter" data-filter=".Branding">Branding</li>
-                    <li class="filter" data-filter=".Websites">Websites</li>
-                    <li class="filter" data-filter=".Graphic">Graphic</li>
-                    <li class="filter" data-filter=".design">design</li>
-                    <li class="filter" data-filter=".Video">Video</li>
+										<li class="filter" data-filter="all">Everything</li>
+										{% for formation in site.formations %}
+                    {% if formation.path contains page.lang %}
+                    <li class="filter" data-filter=".{{ formation.level }}">{{ formation.level }}</li>
+										{% endif %}
+                    {% endfor %}
                 </ul>
               </div>
               <div class="portfolio-contant">
                 <ul id="portfolio-contant-active">
-                    <li class="mix Branding">
-                      <a href="#">
+                    {% for formation in site.formations %}
+                    {% if formation.path contains page.lang %}
+                    <li class="mix {{ formation.level }}">
+                      <a href="{{ formation.url }}">
                         <img src="{{ site.baseurl }}/assets/img/portfolio/work1.jpg" alt="">
                         <div class="overly">
-                          <div class="position-center">
-                            <h2>Tesla Motors</h2>
-                            <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                          </div>
+                            <div class="position-center">
+                              <h2>{{ formation.title }}</h2>
+                              <p>{{ formation.description }}</p>
+                            </div>
                         </div>
                       </a>
-                  </li>
-                  <li class="mix Websites">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/assets/img/portfolio/work2.jpg" alt="">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="mix Graphic">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/assets/img/portfolio/work3.jpg" alt="">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                        </div>
-                      </div>
-
-                    </a>
-                  </li>
-                  <li class="mix design">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/assets/img/portfolio/work4.jpg" alt="">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="mix Video">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/assets/img/portfolio/work5.jpg" alt="">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="mix Graphic">
-                    <a href="#">
-                      <img src="{{ site.baseurl }}/assets/img/portfolio/work6.jpg" alt="">
-                      <div class="overly">
-                        <div class="position-center">
-                          <h2>Tesla Motors</h2>
-                          <p>Labore et dolore magna aliqua. Ut enim ad </p>
-
-                        </div>
-                      </div>
-                    </a>
-                  </li>
+                    </li>
+                    {% endif %}
+                    {% endfor %}
                 </ul>
               </div>
             </div>

@@ -1,6 +1,5 @@
 ---
 title: Contact us!
-lang: en
 navigation: Contact
 weight: 10
 ---

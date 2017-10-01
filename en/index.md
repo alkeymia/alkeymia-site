@@ -1,7 +1,6 @@
 ---
 title: Airspace
-permalink: /fr
-lang: fr
+permalink: /en/
 navigation: Home
 weight: 1
 ---

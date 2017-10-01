@@ -1,6 +1,5 @@
 ---
 title: Blog
-lang: en
 navigation: News
 weight: 2
 ---
@@ -18,6 +17,7 @@ weight: 2
   </div>
 </section>
 {% for post in site.posts %}
+{% if post.path contains page.lang %}
 <div class="post-area">
   <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
   <p class="post-date">{{ post.date | date_to_long_string }}</p>
@@ -25,4 +25,5 @@ weight: 2
     {{ post.content | strip_html | truncatewords: 50 }}
   </p>
 </div>
+{% endif %}
 {% endfor %}

@@ -11,6 +11,9 @@
                   <a class="page-link{% if page.title == menu.title %} active{% endif %}" href="{{ menu.url }}" class="{{ menu.lang }}">{{ menu.navigation_footer }}</a>
                 </li>
               {% endif %}{% endif %}{% endif %}{% endfor %}
+              {% if site.twitter.username %}
+              <li><a href="https://twitter.com/{{ site.twitter.username }}">Twitter</a></li>
+              {% endif %}
             </ul>
           </div>
         <p>Copyright &copy; Design &amp; Developed by <a href="http://www.themefisher.com">Themefisher</a>. All rights reserved.</p>

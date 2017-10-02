@@ -1,19 +1,33 @@
 ---
 layout: page
 ---
+{% assign displayformation = false %}
+{% for session in site.sessions %} 
+{% if page.title == session.title %}
+  {% assign displayformation = true %}
+{% endif %}
+{% endfor %}
 
-<nav>
+{% if displayformation %}
+<nav class="nav-session">
+  <h2>Inscrivez-vous aux sessions suivantes</h2>
   <ul>
-  {% for formation in site.data.formations %}
-  {% if page.title == formation.theme %}
+  {% for session in site.sessions %} 
+  {% if page.title == session.title %}
+  {% capture datenow %}{{'now' | date: '%s'}}{% endcapture %}
+  {% capture datesession %}{{ session.date-session | date: '%s'}}{% endcapture %}
+  {% if datenow < datesession %}
     <li>
-      <a href="/{{ page.lang }}/contacts/{{ formation.theme | replace: ' ', '-'}}/{{ formation.teacher | replace: ' ', '-'}}/">
-        {{ formation.date }} - {{ formation.teacher }} - {{ formation.city }}</a>
+      <a href="{{ session.url }}">
+        {{ session.title }} {{ session.date-session | date: "%D" }} - {{ session.teacher }} - {{ session.city }}</a>
     </li>
+  {% endif %}
   {% endif %}
   {% endfor %}
   </ul>
 </nav>
 <hr>
+{% endif %}
 
+<h2>Contenu de la session</h2>
 {{ content }}

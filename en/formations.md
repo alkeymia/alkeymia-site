@@ -24,23 +24,13 @@ weight: 2
         <div class="row">
           <div class="col-md-12">
             <div class="block">
-              <div class="portfolio-menu">
-                <ul>
-										<li class="filter" data-filter="all">Everything</li>
-										{% for formation in site.formations %}
-                    {% if formation.path contains page.lang %}
-                    <li class="filter" data-filter=".{{ formation.level }}">{{ formation.level }}</li>
-										{% endif %}
-                    {% endfor %}
-                </ul>
-              </div>
               <div class="portfolio-contant">
                 <ul id="portfolio-contant-active">
                     {% for formation in site.formations %}
                     {% if formation.path contains page.lang %}
                     <li class="mix {{ formation.level }}">
                       <a href="{{ formation.url }}">
-                        <img src="{{ site.baseurl }}/assets/img/portfolio/work1.jpg" alt="">
+                        <img src="{{ site.baseurl }}/assets/formations/{{ formation.title }}.png" alt="">
                         <div class="overly">
                             <div class="position-center">
                               <h2>{{ formation.title }}</h2>

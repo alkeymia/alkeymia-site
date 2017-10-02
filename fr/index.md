@@ -1,7 +1,7 @@
 ---
-title: Airspace
+title: Accueil
 description: Implémentation de solutions orientées ROI, DEVOPS, à l'état de l'art technologique
-permalink: /fr
+permalink: /fr/
 navigation: Accueil
 weight: 1
 ---
@@ -12,7 +12,7 @@ weight: 1
     <div class="row">
       <div class="col-md-10 col-md-offset-2">
         <div class="block">
-          <h1 class="animated fadeInUp">CREATEUR DE SOLUTIONS <br> SUR MESURE</h1>
+          <h1 class="animated fadeInUp">CRÉATEUR DE SOLUTIONS <br> SUR MESURE</h1>
           <p class="animated fadeInUp">Implémentation de solutions orientées ROI, DEVOPS, à l'état de l'art technologique
             </p>
         </div>
@@ -67,8 +67,7 @@ weight: 1
       {% if formation.path contains page.lang %}
       <div class="col-sm-6 col-md-4">
         <div class="service-item">
-          <i class="icon ion-coffee"></i>
-          <h4>{{ formation.title }}</h4>
+          <img src="{{ site.baseurl }}/assets/formations/{{ formation.title }}.png" alt="{{ formation.title }}">
           <p>{{ formation.description | strip_html | truncatewords: 30 }}</p>
         </div>
       </div>

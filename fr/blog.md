@@ -18,7 +18,7 @@ weight: 2
 </section>
 {% for post in site.posts %}
 {% if post.path contains page.lang %}
-<div class="post-area">
+<div class="post-area container container-narrow">
   <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
   <p class="post-date">{{ post.date | date: "%D" }}</p>
   <p>

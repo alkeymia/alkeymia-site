@@ -6,7 +6,7 @@ description: "Cours en ligne"
 url: "https://grader-pig-68500.netlify.com" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
 baseurl: ""
-##permalink: /:path/
+permalink: :title/
 
 timezone: Europe/Paris
 mainColor: '#000000'
@@ -44,6 +44,10 @@ collections:
     output: true
     order: date asc
     permalink: formations/:title
+  sessions:
+    output: true
+    order: date asc
+    permalink: sessions/:title
     sitemap: false
 
 defaults:
@@ -91,27 +95,36 @@ defaults:
     values:
       lang: "en"
       permalink: en/:collection/:title/
+  - scope:
+      path: "_sessions"
+      type: "sessions"
+    values:
+      layout: sessions
+  - scope:
+      path: "_sessions/fr"
+      type: "sessions"
+    values:
+      lang: "fr"
+      permalink: fr/:collection/:title/
+  - scope:
+      path: "_sessions/en"
+      type: "sessions"
+    values:
+      lang: "en"
+      permalink: en/:collection/:title/
 
-# Plugin: generate pages from Yaml
-page_gen-dirs: true # uncomment, if you prefer to generate named folders
-page_gen:
-  - data: 'formations'
-    template: 'subscribe'
-    name: 'teacher'
-    lang: 'lang'
-    theme: 'theme'
-    dir: 'contacts'
+# # Plugin: generate pages from Yaml
+# page_gen-dirs: true # uncomment, if you prefer to generate named folders
+# page_gen:
+#   - data: 'formations'
+#     template: 'subscribe'
+#     name: 'teacher'
+#     lang: 'lang'
+#     theme: 'theme'
+#     dir: 'contacts'
 
 # Google analytics
 # ga_tracking_id: "UA-XXXX-1"
-
-# Category descriptions (for archive pages)
-descriptions:
-  - cat: jekyll
-    desc: "Posts describing Jekyll setup techniques."
-
-  - cat: dummy
-    desc: "Just some placeholder posts, lorem ipsum and the rest."
 
 # Plugin :: see gemfle file
 plugins:

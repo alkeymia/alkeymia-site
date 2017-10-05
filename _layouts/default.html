@@ -3,9 +3,10 @@
   <head itemscope itemtype="http://schema.org/WebSite">
     {% include head.html %}
   </head>
-  <body>
+  <body onload="load();">
     {% include header.html %}
     {{ content }}
     {% include footer.html %}
-    </body>
+  </body>
+  
 </html>

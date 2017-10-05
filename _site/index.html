@@ -32,23 +32,32 @@
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700" />
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Volkhov:400italic" /> -->
 <link rel="stylesheet" href="/assets/css/main.css" />
-
 <!-- Js -->
 <script src="http://localhost:4000/assets/js/fetch-inject.js"></script>
 <script>
 	// Get the selected value
-	var countryCode  = navigator.language || navigator.userLanguage;
-	var languageCode = document.documentElement.lang
-
-  // Test if localStorage is supported by the user's browser
-  if (typeof(Storage) !== "undefined") {
-    // localStorage is available
-    localStorage.setItem("countryCode", countryCode);
+	var countryCode    = navigator.language || navigator.userLanguage;
+	var languageCode   = document.documentElement.lang
+	
+	// Function for setting user choose with language navigation selector
+	function load() { 
+		var languageSelect = document.getElementById("nav-language");
+		languageSelect.addEventListener("mouseup", function(){
+			if (typeof(Storage) !== "undefined") {
+				// Set that the language variable
+				localStorage.setItem("languageSelect", 'true');
+			}		
+		});
+	} 
+	// Test if localStorage is supported by the user's browser
+	if (typeof(Storage) !== "undefined") {
+		// localStorage is available
+		localStorage.setItem("countryCode", countryCode);
 	}
-	console.log(window.location.href)
 	if (typeof(Storage) !== "undefined") {
 		var countryCode = localStorage.getItem("countryCode");
-		if (countryCode.substring(0, 2) !== languageCode) {
+		var languageSelect = localStorage.getItem("languageSelect");
+		if (countryCode.substring(0, 2) !== languageCode && !languageSelect) {
 			window.location.href = 'http://localhost:4000/' + countryCode.substring(0, 2) + '/'
 		}
 	}
@@ -69,7 +78,6 @@ fetchInject([
 	
 })
 </script>
-
 <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
@@ -104,12 +112,22 @@ fetchInject([
 -->
 
   </head>
-  <body>
+  <body onload="load();">
     <!-- Header Start -->
 <header>
 <div class="container">
   <div class="row">
     <div class="col-md-12">
+      <ul id="nav-language" class="">
+        
+        <li><span>English</span></li>
+        <li><a class="nav-lang_link" href="/fr//">Français</a></li>
+        
+        
+        <li><a class="nav-lang_link" href="/en//">English</a></li>
+        <li><span>Français</span></li>
+        
+      </ul>
       <!-- header Nav Start -->
       <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -160,5 +178,6 @@ fetchInject([
   </div>
 </footer>
 
-    </body>
+  </body>
+  
 </html>

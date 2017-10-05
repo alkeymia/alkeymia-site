@@ -3,6 +3,16 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12">
+      <ul id="nav-language" class="">
+        {% if page.lang != 'fr' %}
+        <li><span>English</span></li>
+        <li><a class="nav-lang_link" href="{{ site.baseurl }}/fr/{{ page.url | replace: '/en/', '' }}">Français</a></li>
+        {% endif %}
+        {% if page.lang != 'en' %}
+        <li><a class="nav-lang_link" href="{{ site.baseurl }}/en/{{ page.url | replace: '/fr/', '' }}">English</a></li>
+        <li><span>Français</span></li>
+        {% endif %}
+      </ul>
       <!-- header Nav Start -->
       <nav class="navbar navbar-default">
         <div class="container-fluid">

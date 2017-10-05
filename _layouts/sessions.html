@@ -3,22 +3,38 @@ layout: default
 ---
 
 <div id="form" class="container">
-	<h1>Inscrivez vous à la session du {{ page.date-session | date: "%D" }}</h1>
+	<h1>Inscrivez vous à la session{% if page.date-session %} du {{ page.date-session | date: "%D" }}{% endif %}</h1>
 	<p class="well">
-	<strong>Enseignant :</strong> {{ page.teacher }}<br>
-	<strong>Thème :</strong> {{ page.title }}<br>
-	<strong>Date :</strong> {{ page.date-session | date: "%D" }}<br>
-	<strong>À :</strong> {{ page.city }}
+	{% if page.teacher %}<strong>Enseignant :</strong> {{ page.teacher }}<br>{% endif %}
+	{% if page.title %}<strong>Thème :</strong> {{ page.title }}<br>{% endif %}
+	<strong>Date :</strong> {% if page.date-session %}{{ page.date-session | date: "%D" }}{% else%}À définir{% endif %}<br>
+	{% if page.date-session %}<strong>À :</strong> {{ page.city }}{% endif %}
 	</p>
 	<div class="block">
-	<form action="https://formspree.io/julien.sebrien@gmail.com">
+	<form action="https://formspree.io/training@alkeymia.com">
 		<div class="form-group">
-			<label>Votre Nom</label>
-			<input type="text" class="form-control" placeholder="ex: Jean Delafontaine">
+			<label>Votre prénom</label>
+			<input type="text" class="form-control" placeholder="ex: Jean">
+		</div>
+		<div class="form-group">
+			<label>Votre nom</label>
+			<input type="text" class="form-control" placeholder="ex: Delafontaine">
 		</div>
 		<div class="form-group">
 			<label>Votre adresse email</label>
-			<input type="text" class="form-control" placeholder="ex: jean.delafontaine@mail.com" name="_replyto" >
+			<input type="email" class="form-control" placeholder="ex: jean.delafontaine@mail.com" name="_replyto">
+		</div>
+		<div class="form-group">
+			<label>Votre numéro de téléphone</label>
+			<input type="text" class="form-control" placeholder="ex: +33 6 07 08 09 10">
+		</div>
+		<div class="form-group">
+			<label>Votre société</label>
+			<input type="text" class="form-control" placeholder="ex: SNCF">
+		</div>
+		<div class="form-group-2">
+			<label>Votre besoin</label>
+			<textarea class="form-control" rows="3" placeholder="Je désire…"></textarea>
 		</div>
 		<input type="hidden" name="_subject" value="{{ page.theme }} {{ page.date }} {{ page.teacher }} à {{ page.city }}" />
 		<input type="hidden" name="_language" value="{{ page.lang }}" />

@@ -72,21 +72,26 @@ a:active {
 --*/
 header {
   background: #fff;
-  padding: 20px 0;
+  padding: 0 0 20px;
 }
 header .navbar {
   margin-bottom: 0px;
   border: 0px;
 }
 header .navbar-brand {
+  display: block;
+  float: none;
   padding-top: 5px;
+  @media only screen and (max-width: 768px) {
+    margin-top: 20px;
+  }
 }
 header .navbar-default {
   background: none;
   border: 0px;
 }
 header .navbar-default .navbar-nav {
-  padding-top: 10px;
+  padding-top: 0px;
 }
 header .navbar-default .navbar-nav li a {
   color: #333333;
@@ -402,6 +407,30 @@ font header .navbar-default .navbar-nav li a:hover {
   word-spacing: 3px;
 }
 /*--
+	language
+--*/
+.nav-block {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+}
+#nav-language {
+  margin: 0;
+  padding: 0;
+  text-align: right;
+  @media only screen and (min-width: 768px) {
+    margin-right: 34px;
+  }
+  li {
+    display: inline-block;
+  }
+  a,span {
+    padding: 5px 10px;
+    font-size: 80%;
+  }
+}
+/*--
 	Session
 --*/
 .nav-session {
@@ -412,7 +441,15 @@ font header .navbar-default .navbar-nav li a:hover {
     color: #fff;
   }
   a:hover {
-    color: #000;
+    color: #fff;
+    text-shadow: 1px 1px 1px #aaa;
+    text-decoration: underline !important;
+  }
+}
+.link-contact {
+  &,a {
+    margin: auto;
+    font-weight: bold;
   }
 }
 /*--

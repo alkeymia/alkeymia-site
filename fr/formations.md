@@ -1,7 +1,7 @@
 ---
 title: Nos formations
 navigation: Formations
-weight: 2
+weight: 4
 ---
 
 <!-- Portfolio Start -->

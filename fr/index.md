@@ -48,7 +48,7 @@ weight: 1
     <div class="col-md-6 col-md-offset-6">
       <h2>BigData</h2>
       <p>Notre cœur de métier est le Big Data. Grâce à une équipe de R&D, nous consacrons notre énergie et nos technologies à accompagner nos clients jusqu’au bout dans la mise en place de stratégies et d’exécution digitale. Nous proposons aussi des formations sur des technologies gravitant dans cet écosystème.</p>
-      <a href="#" class="btn btn-view-works">Programmes</a>
+      <a href="/{{ page.lang }}/formations/" class="btn btn-view-works">Programmes</a>
     </div>
   </div>
 </div>
@@ -67,7 +67,7 @@ weight: 1
       {% if formation.path contains page.lang %}
       <div class="col-sm-6 col-md-4">
         <div class="service-item">
-          <img src="{{ site.baseurl }}/assets/formations/{{ formation.title }}.png" alt="{{ formation.title }}">
+          <a href="{{ formation.url }}"><img src="{{ site.baseurl }}/assets/formations/{{ formation.title }}.png" alt="{{ formation.title }}"></a>
           <p>{{ formation.description | strip_html | truncatewords: 30 }}</p>
         </div>
       </div>
@@ -84,7 +84,7 @@ weight: 1
         <div class="block">
           <h2>Notre métier</h2>
           <p>Découvrez ce que nous faisons et notre philosophie de conception. Nous effectuons une veille technologique constante, qui nous permet de proposer les solutions les plus perennes innovantes, répondant à des besoins pour tous secteurs d’activités.</p>
-          <a class="btn btn-default btn-call-to-action" href="/{{ page.lang }}/our-work.html" >En savoir plus</a>
+          <a class="btn btn-default btn-call-to-action" href="/{{ page.lang }}/our-work/" >En savoir plus</a>
         </div>
       </div>
     </div>

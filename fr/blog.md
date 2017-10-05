@@ -2,7 +2,7 @@
 title: Nos actualités
 navigation: Blog
 navigation_footer: Blog
-weight: 2
+weight: 9
 ---
 <!-- Slider Start -->
 <section id="global-header">

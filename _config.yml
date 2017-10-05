@@ -19,13 +19,13 @@ profile: true
  # seo-tag
 author: alkeymia
 twitter:
-  username: alkeymia
+  username: AlkeymiaEng
 social:
   type: personn
   name: alkeymia
   links:
-    - https://twitter.com/alkeymia
-    - https://github.com/alkeymia
+    - https://twitter.com/AlkeymiaEng
+    - https://linkedin.com/alkeymia
 
 # Build settings
 markdown: kramdown

@@ -1,6 +1,17 @@
 ---
 layout: page
 ---
+
+{% assign displayfiles = false %}
+{% for image in site.static_files %}
+{% if image.path contains page.lang %}
+{% assign title = page.title | downcase %}
+{% if image.name contains title %}
+  {% assign displayformation = true %}
+{% endif %}
+{% endif %}
+{% endfor %}
+
 {% assign displayformation = false %}
 {% for session in site.sessions %} 
 {% if page.title == session.title %}
@@ -8,12 +19,34 @@ layout: page
 {% endif %}
 {% endfor %}
 
+{% if displayfiles %}
+<div class="block-pdf">
+  <ul>
+    {% for image in site.static_files %}
+    {% if image.path contains page.lang %}
+    {% assign title = page.title | downcase %}
+    {% if image.name contains title %}
+    {% if image.name contains 'formation' %}
+    <li><i class="fa fa-download"></i> <a href="{{ image.path }}" title="Télécharger {{ image.name}}">Formation au format PDF</a></li>
+    {% endif %}
+    {% if image.name contains 'inscription' %}
+    <li><i class="fa fa-download"></i> <a href="{{ image.path }}" title="Télécharger {{ image.name}}">Bulletin d'inscription</a></li>
+    {% endif %}
+    <li><i class="fa fa-download"></i> <a href="/assets/formations/{{ page.lang }}/bon-de-commande.pdf" title="Télécharger le bon de commande">Bon de commande</a></li>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
 {% if displayformation %}
 <nav class="nav-session">
   <h2>Inscrivez-vous aux sessions suivantes</h2>
   <ul>
   {% for session in site.sessions %} 
   {% if page.title == session.title %}
+  {% if session.date-session %}
   {% capture datenow %}{{'now' | date: '%s'}}{% endcapture %}
   {% capture datesession %}{{ session.date-session | date: '%s'}}{% endcapture %}
   {% if datenow < datesession %}
@@ -23,11 +56,18 @@ layout: page
     </li>
   {% endif %}
   {% endif %}
+  {% endif %}
   {% endfor %}
   </ul>
+  {% for session in site.sessions %} 
+  {% if page.title == session.title %}
+  {% if session.simplecontact %}
+  <p class="link-contact">> <a href="{{ session.url }}">Prise de contact</a></p>
+  {% endif %}
+  {% endif %}
+  {% endfor %}
 </nav>
-<hr>
 {% endif %}
+<hr>
 
-<h2>Contenu de la session</h2>
 {{ content }}

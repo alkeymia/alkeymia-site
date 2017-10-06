@@ -18,6 +18,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 .container {
+  position: relative;
   padding-bottom: 2rem;
 }
 .container-narrow {
@@ -44,9 +45,9 @@ p {
   line-height: 28px;
 }
 ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+  // padding: 0;
+  // margin: 0;
+  // list-style: none;
 }
 a,
 a:active,
@@ -431,9 +432,25 @@ font header .navbar-default .navbar-nav li a:hover {
   }
 }
 /*--
+	Work
+--*/
+.block-work {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(2, 1fr));
+  grid-gap: 10vmin;
+  & > div {
+    position: relative;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+/*--
 	Session
 --*/
 .nav-session {
+  margin-bottom: 1.5rem;
   padding: 0.5rem 2rem;
   background: #d05858;
   h2,a {
@@ -450,6 +467,31 @@ font header .navbar-default .navbar-nav li a:hover {
   &,a {
     margin: auto;
     font-weight: bold;
+  }
+}
+/*--
+	portfolio-work Start
+--*/
+.block-pdf {
+  @media only screen and (min-width: 1200px) {
+    position: absolute;
+    left: 100%;
+    width: 20rem;
+    min-height: 15rem;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border: 1px solid rgba(#000,0.2);
+  text-align: center;
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    color: #000;
   }
 }
 /*--

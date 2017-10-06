@@ -436,8 +436,7 @@ font header .navbar-default .navbar-nav li a:hover {
 --*/
 .block-work {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
-  grid-template-columns: repeat(auto-fill, minmax(2, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(26em, 1fr));
   grid-gap: 10vmin;
   & > div {
     position: relative;

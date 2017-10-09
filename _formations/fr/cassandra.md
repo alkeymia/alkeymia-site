@@ -52,15 +52,10 @@ Cette formation pratique de 3 jours permettra aux stagiaires de construire une a
   - Compaction
 
 ### Big Data
-  - Big Dat
+  - Big Data
 
 # Durée
 2 jours, soit 14 heures.
-
-## Ivan Beauvais
-Développeur sur l’écosystème Java depuis 9 ans, Ivan Beauvais s’intéresse à tout qui permet de développer des 
-applications de qualité et de les mettre en production : Software Craftsmanship, Devops, architectures, pratiques agiles ...
-Il intervient depuis 3 ans dans des missions d’expertise sur des projets utilisant intensivement Elasticsearch
 
 ## Méthodes pédagogiques
 50% de travaux pratiques et 50% de théorie.

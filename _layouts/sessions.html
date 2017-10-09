@@ -17,11 +17,11 @@ layout: default
 	<form action="https://formspree.io/training@alkeymia.com" method="POST">
 		<div class="form-group">
 			<label>Votre prénom</label>
-			<input type="text" class="form-control" placeholder="ex: Jean">
+			<input type="text" class="form-control" placeholder="ex: Jean" name="prenom">
 		</div>
 		<div class="form-group">
 			<label>Votre nom</label>
-			<input type="text" class="form-control" placeholder="ex: Delafontaine">
+			<input type="text" class="form-control" placeholder="ex: Delafontaine" name="nom">
 		</div>
 		<div class="form-group">
 			<label>Votre adresse email</label>
@@ -29,15 +29,15 @@ layout: default
 		</div>
 		<div class="form-group">
 			<label>Votre numéro de téléphone</label>
-			<input type="text" class="form-control" placeholder="ex: +33 6 07 08 09 10">
+			<input type="text" class="form-control" placeholder="ex: +33 6 07 08 09 10" name="telephone">
 		</div>
 		<div class="form-group">
 			<label>Votre société</label>
-			<input type="text" class="form-control" placeholder="ex: SNCF">
+			<input type="text" class="form-control" placeholder="ex: SNCF" name="_replyto">
 		</div>
 		<div class="form-group-2">
 			<label>Votre besoin</label>
-			<textarea class="form-control" rows="3" placeholder="Je désire…"></textarea>
+			<textarea class="form-control" rows="3" placeholder="Je désire…" name="votrebesoin"></textarea>
 		</div>
 		<input type="hidden" name="_subject" value="{{ page.theme }} {{ page.date }} {{ page.teacher }} à {{ page.city }}" />
 		<input type="hidden" name="_language" value="{{ page.lang }}" />

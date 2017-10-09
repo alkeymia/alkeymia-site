@@ -13,19 +13,19 @@ weight: 10
           <legend>Contactez nous</legend>
           <div class="form-group">
             <label>Votre Nom</label>
-            <input type="text" class="form-control" placeholder="ex: Jean Delafontaine">
+            <input type="text" class="form-control" placeholder="ex: Jean Delafontaine" name="nom">
           </div>
           <div class="form-group">
             <label>Votre adresse email</label>
-            <input type="text" class="form-control" placeholder="ex: jean.delafontaine@mail.com">
+            <input type="text" class="form-control" placeholder="ex: jean.delafontaine@mail.com" name="_reply">
           </div>
           <div class="form-group">
             <label>Un sujet</label>
-            <input type="text" class="form-control" placeholder="ex: accès au lieu de formation">
+            <input type="text" class="form-control" placeholder="ex: accès au lieu de formation" name="_subject">
           </div>
           <div class="form-group-2">
             <label>Votre message</label>
-            <textarea class="form-control" rows="3" placeholder="J'ai un sujet à vous soumettre"></textarea>
+            <textarea class="form-control" rows="3" placeholder="J'ai un sujet à vous soumettre" name="message"></textarea>
           </div>
           <button class="btn btn-default" type="submit">Envoyer un message</button>
         </form>

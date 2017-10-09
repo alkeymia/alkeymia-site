@@ -274,7 +274,7 @@ font header .navbar-default .navbar-nav li a:hover {
   color: #8d8f92;
   margin-bottom: 20px;
 }
-#feature .btn-view-works {
+.btn-view-works {
   background: #c34444;
   color: #fff;
   padding: 10px 20px;
@@ -489,6 +489,7 @@ font header .navbar-default .navbar-nav li a:hover {
     min-height: 15rem;
   }
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
@@ -496,15 +497,23 @@ font header .navbar-default .navbar-nav li a:hover {
   border: 1px solid rgba(#000,0.2);
   text-align: center;
   ul {
-    margin: 0;
+    margin: 0 0 1rem;
     padding: 0;
-    list-style-type: none
-  }
-  a {
-    color: #000;
-    &:hover {
-      text-decoration: underline;
+    list-style-type: none;
+    a {
+      color: #000;
+      &:hover {
+        text-decoration: underline;
+      }
     }
+  }
+  .btn {
+    margin-bottom: 1rem;
+  }
+  p {
+    max-width: 40rem;
+    font-size: 90%;
+    line-height: 1;
   }
 }
 /*--

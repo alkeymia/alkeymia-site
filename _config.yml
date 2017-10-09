@@ -135,6 +135,10 @@ plugins:
   - jekyll-default-layout
   - jekyll-redirect-from
 
+include:
+  - _redirects
+  - _headers
+
 # File not to compile
 exclude:
   - .cache

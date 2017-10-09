@@ -7,8 +7,8 @@ description: "version 5.x : description de l'architecture et des concepts, reche
 
 Elasticsearch est un moteur d’indexation offrant des fonctionnalités de recherche temps réel et d’analyse sur vos 
 données. Sa nature distribuée et sa capacité à être résilient et hautement disponible ont déjà séduit des acteurs majeurs tel  que Wikipedia, LinkedIn, Netflix, Ebay, ou WordPress. Vous pourrez l’adopter rapidement au sein de votre SI grâce à son API REST.
-## Objectifs
 
+## Objectifs
 La formation porte sur l’ensemble des fonctionnalités de recherche et d’analyse (Query DSL, suggestions « did you mean », « more like this », géolocalisation, relation parent/enfant, aggrégations). La compréhension de son fonctionnement interne (analyzers, mapping, score, Lucene) vous permettra d’utiliser au mieux ces fonctionnalités. La formation vous préparera enfin à l’utiliser en production en tirant partie de sa nature distribuée (cluster élection, snapshot / restore, tuning, etc.).
 
 **La formation permettra aux stagiaires de :**
@@ -75,12 +75,12 @@ La formation porte sur l’ensemble des fonctionnalités de recherche et d’ana
 50% de travaux pratiques et 50% de théorie.
 
 ## Public visé
-Cette formation vise essentiellement les développeurs d’applications, les développeurs ETL (extract, 
-transform et load) ainsi que les Data Scientists ayand besoin d’interagir avec les clusters Kafka pour 
-récupérer ou enregistrer des données.
+Développeurs, architectes, opéra onnels.
 
 ## Pré requis
-Une connaissance en développement de Java ou Python. Aucune connaissance de Kafka n’est nécessaire.
+
+- Connaissances HTTP / REST.
+- Une connaissance de base en informa que.
 
 ## Validation
 À la fin de cette formation, les stagiaires recevront une attestation de présence.

@@ -20,9 +20,9 @@ weight: 9
 {% if post.path contains page.lang %}
 <div class="post-area container container-narrow">
   <a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
-  <p class="post-date">{{ post.date | date: "%D" }}</p>
+  <p class="post-date">{{ post.date | date: "%d/%m/%Y" }}</p>
   <p>
-    {{ post.content | strip_html | truncatewords: 50 }}
+    {{ post.content | truncatewords: 10 | markdownify }} 
   </p>
 </div>
 {% endif %}

@@ -16,11 +16,11 @@ weight: 2
 			<img src="/assets/img/progres.jpg" alt="">	
 		</div>
 		<div class="col-md">
-			<img src="/assets/img/teaching.jpg" alt="">	
-		</div>
-		<div class="col-md">
 			<h2>Formateurs passionnés</h2>	
 			<p>Nous aimons tous notre métier passionnément, et aimons transmettre ce que nous connaissons à d'autres développeurs. Vous pouvez faire appel à nous pour vous former, en choisissant une formation dans notre catalogue, ou en établissant un programme à la carte.</p>
+		</div>
+		<div class="col-md">
+			<img src="/assets/img/teaching.jpg" alt="">	
 		</div>
 		<div class="col-md">
 			<h2>L'excellence dans la réalisation</h2>	

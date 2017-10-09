@@ -4,6 +4,8 @@ description: Implémentation de solutions orientées ROI, DEVOPS, à l'état de 
 permalink: /fr/
 navigation: Accueil
 weight: 1
+redirect_from:
+  - /
 ---
 
 <!-- Slider Start -->

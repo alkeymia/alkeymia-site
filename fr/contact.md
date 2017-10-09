@@ -9,7 +9,7 @@ weight: 10
   <div id="form" class="container">
     <div class="row">
       <div class="block">
-        <form action="https://formspree.io/contact@alkeymia.com">
+        <form action="https://formspree.io/contact@alkeymia.com" method="POST">
           <legend>Contactez nous</legend>
           <div class="form-group">
             <label>Votre Nom</label>

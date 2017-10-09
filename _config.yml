@@ -137,7 +137,7 @@ plugins:
 
 include:
   - _redirects
-  - _headers
+  #- _headers
 
 # File not to compile
 exclude:

@@ -133,6 +133,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-default-layout
+  - jekyll-redirect-from
 
 # File not to compile
 exclude:

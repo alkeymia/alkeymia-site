@@ -119,6 +119,7 @@ font header .navbar-default .navbar-nav li a:hover {
   background-position: 10% 0%;
   padding: 200px 0 280px 0;
   position: relative;
+  word-wrap: break-word;
 }
 #slider:before {
   content: "";
@@ -197,6 +198,9 @@ font header .navbar-default .navbar-nav li a:hover {
   margin: 0;
   font-size: 14px;
   line-height: 1.8;
+}
+#service img {
+  max-width: 100%;
 }
 /*--
 	call-to-action Start

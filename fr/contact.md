@@ -52,10 +52,10 @@ weight: 10
           </ul>
           <ul class="social-icons">
             <li>
-              <a href="https://linkedin.com/alkeymia"><i class="fa fa-linkedin"></i></a>
+              <a href="https://linkedin.com/alkeymia" target="_blank"><i class="fa fa-linkedin"></i></a>
             </li>
             <li>
-              <a href="https://twitter.com/AlkeymiaEng"><i class="fa fa-twitter"></i></a>
+              <a href="https://twitter.com/AlkeymiaEng" target="_blank"><i class="fa fa-twitter"></i></a>
             </li>
           </ul>
         </div>

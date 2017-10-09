@@ -3,6 +3,8 @@ title: Cassandra
 description: "version 3.x : presentation de l'architecture NoSQL, topologies des clusters, interrogation et mise à jour, administration"
 ---
 
+Tarif : 1390 euros HT / Durée : 3 jours
+
 ## Présentation de la formation officielle Cassandra pour développeurs
 
 Cette formation a pour objectif de vous expliquer les fondamentaux de l’architecture, l’installation et la configuration d’Apache Cassandra. Ce cours est un prérequis pour pouvoir ensuite suivre les autres formations DataStax.
@@ -13,7 +15,6 @@ Cette formation pratique de 3 jours permettra aux stagiaires de construire une a
  - Créer des tables, stocker et obtenir des données
  - Comprendre le modèle de données d’Apache Cassandra
  - Comprendre l’architecture d’Apache Cassandra
- - Explorer KillrVideo – l’exemple d’application créé pour cette formation
 
 ## Programme
 
@@ -55,7 +56,7 @@ Cette formation pratique de 3 jours permettra aux stagiaires de construire une a
   - Big Data
 
 # Durée
-2 jours, soit 14 heures.
+3 jours, soit 21 heures.
 
 ## Méthodes pédagogiques
 50% de travaux pratiques et 50% de théorie.

@@ -3,6 +3,8 @@ title: ElasticSearch
 description: "version 5.x : description de l'architecture et des concepts, recherches et mappings avancés, optimisation, administration"
 ---
 
+Tarif : 1390 euros HT / Durée : 3 jours
+
 ## Présentation de la formation officielle Elastic Search pour développeurs
 
 Elasticsearch est un moteur d’indexation offrant des fonctionnalités de recherche temps réel et d’analyse sur vos 

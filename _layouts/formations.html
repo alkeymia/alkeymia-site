@@ -37,7 +37,13 @@ layout: page
     {% endif %}
     {% endfor %}
   </ul>
-  <a href="/fr/contacts/" class="btn btn-view-works">Contactez-nous</a>
+  {% for session in site.sessions %} 
+  {% if page.title == session.title %}
+  {% if session.simplecontact %}
+  <a href="{{ session.url }}" class="btn btn-view-works">Contactez-nous</a>
+  {% endif %}
+  {% endif %}
+  {% endfor %}
   <p>Pour toutes vos questions un conseiller est là pour vous répondre et vous proproser la solution adaptée à vos besoins.</p>
 </div>
 {% endif %}

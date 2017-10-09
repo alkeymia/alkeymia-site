@@ -9,7 +9,7 @@
 <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 <!-- CSS -->
-<link rel="preload" href="https://fonts.googleapis.com" />
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
 <!-- <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,600" />
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,100,300,500,700" />
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Volkhov:400italic" /> -->
@@ -22,15 +22,15 @@
 	var languageCode   = document.documentElement.lang
 	
 	// Function for setting user choose with language navigation selector
-	function load() { 
-		var languageSelect = document.getElementById("nav-language");
-		languageSelect.addEventListener("mouseup", function(){
-			if (typeof(Storage) !== "undefined") {
-				// Set that the language variable
-				localStorage.setItem("languageSelect", 'true');
-			}		
-		});
-	} 
+	// function load() { 
+	// 	var languageSelect = document.getElementById("nav-language");
+	// 	languageSelect.addEventListener("mouseup", function(){
+	// 		if (typeof(Storage) !== "undefined") {
+	// 			// Set that the language variable
+	// 			localStorage.setItem("languageSelect", 'true');
+	// 		}		
+	// 	});
+	// } 
 	// Test if localStorage is supported by the user's browser
 	if (typeof(Storage) !== "undefined") {
 		// localStorage is available

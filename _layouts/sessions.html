@@ -8,7 +8,10 @@ layout: default
 	{% if page.teacher %}<strong>Enseignant :</strong> {{ page.teacher }}<br>{% endif %}
 	{% if page.title %}<strong>Thème :</strong> {{ page.title }}<br>{% endif %}
 	<strong>Date :</strong> {% if page.date-session %}{{ page.date-session | date: "%d/%m/%Y" }}{% else%}À définir{% endif %}<br>
-	{% if page.date-session %}<strong>À :</strong> {{ page.city }}{% endif %}
+	{% if page.session %}<strong>Session :</strong> {{ page.session }}<br>{% endif %}
+	{% if page.duration %}<strong>Durée :</strong> {{ page.duration }}<br>{% endif %}
+	<strong>Tarif :</strong> {% if page.price %}{{ page.price }}{% else%}À définir{% endif %}<br>
+	{% if page.city %}<strong>À :</strong> {{ page.city }}{% endif %}
 	</p>
 	<div class="block">
 	<form action="https://formspree.io/training@alkeymia.com" method="POST">

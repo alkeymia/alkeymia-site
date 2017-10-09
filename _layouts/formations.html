@@ -42,13 +42,11 @@ layout: page
 </div>
 {% endif %}
 
+{% if displayformation %}
 <nav class="nav-session">
-  {% if displayformation %}
+
   <h2>Inscrivez-vous aux sessions suivantes</h2>
-  {% else %}
-  <h2>Contactez-nous !</h2>
-  {% endif %}
-  {% if displayformation %}
+  
   <ul>
   {% for session in site.sessions %} 
   {% if page.title == session.title %}
@@ -65,7 +63,6 @@ layout: page
   {% endif %}
   {% endfor %}
   </ul>
-  {% endif %}
   
   {% for session in site.sessions %} 
   {% if page.title == session.title %}
@@ -77,5 +74,6 @@ layout: page
   
 </nav>
 <hr>
+{% endif %}
 
 {{ content }}

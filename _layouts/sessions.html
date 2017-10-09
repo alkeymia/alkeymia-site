@@ -7,11 +7,11 @@ layout: default
 	<p class="well">
 	{% if page.teacher %}<strong>Enseignant :</strong> {{ page.teacher }}<br>{% endif %}
 	{% if page.title %}<strong>Thème :</strong> {{ page.title }}<br>{% endif %}
-	<strong>Date :</strong> {% if page.date-session %}{{ page.date-session | date: "%D" }}{% else%}À définir{% endif %}<br>
+	<strong>Date :</strong> {% if page.date-session %}{{ page.date-session | date: "%d/%m/%Y" }}{% else%}À définir{% endif %}<br>
 	{% if page.date-session %}<strong>À :</strong> {{ page.city }}{% endif %}
 	</p>
 	<div class="block">
-	<form action="https://formspree.io/training@alkeymia.com">
+	<form action="https://formspree.io/training@alkeymia.com" method="POST">
 		<div class="form-group">
 			<label>Votre prénom</label>
 			<input type="text" class="form-control" placeholder="ex: Jean">

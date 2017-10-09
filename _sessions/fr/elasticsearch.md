@@ -1,4 +1,4 @@
 ---
-title: Elasticsearch
+title: ElasticSearch
 simplecontact: true
 ---

@@ -57,7 +57,7 @@ Page Formation:
 [X] corriger le lien : formations/elestisearch/ en formations/elastisearch/
 [X] dans la page formations/elestisearch/, remplacer les 2 mentions à “Kafka” par “Elasticsearch” (dans 2 sections à la fin)
 [X] dans la page formations/cassandra, retirer toute la section “Ivan Beauvais”, corriger la coquille “Big Dat” en “Big Data”
-[0] la soumission de formulaire de formation n’est pas fonctionnel (meme pb que pour la page contact)
+[X] la soumission de formulaire de formation n’est pas fonctionnel (meme pb que pour la page contact)
 
 Article de blog:
 [X] tu as laissé cela: twitter. (twitter étant linkable vers le compte twitter https://twitter.com/AlkeymiaEng)
@@ -72,4 +72,4 @@ Essayer de corriger, sinon, si c’est pas possible car du au fait que l’image
 
 Page contact:
 [X] mettre les liens twitter et linkedin en target=”_blank”
-[0] l’envoi de message n’est pas fonctionnel? 
+[X] l’envoi de message n’est pas fonctionnel? 

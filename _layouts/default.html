@@ -3,7 +3,9 @@
   <head itemscope itemtype="http://schema.org/WebSite">
     {% include head.html %}
   </head>
-  <body onload="load();">
+  <!-- <body onload="load();"> -->
+  <body>
+    {% include cookiestatement.html %}
     {% include header.html %}
     {{ content }}
     {% include footer.html %}

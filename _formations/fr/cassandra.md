@@ -1,6 +1,7 @@
 ---
 title: Cassandra
 description: "version 3.x : presentation de l'architecture NoSQL, topologies des clusters, interrogation et mise à jour, administration"
+image: /assets/formations/cassandra.png
 ---
 
 Tarif : 1390 euros HT / Durée : 3 jours

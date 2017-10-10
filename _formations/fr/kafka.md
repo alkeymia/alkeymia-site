@@ -1,6 +1,7 @@
 ---
 title: Kafka
 description: 'version 1.x : détail des concepts sous-jacents, utilisation de producteurs et consommateurs, administration'
+image: /assets/formations/kafka.png
 ---
 
 ## Présentation de la formation officielle Kafka pour développeurs

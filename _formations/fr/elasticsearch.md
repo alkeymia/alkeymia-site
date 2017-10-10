@@ -1,6 +1,7 @@
 ---
 title: ElasticSearch
 description: "version 5.x : description de l'architecture et des concepts, recherches et mappings avancés, optimisation, administration"
+image: /assets/formations/elasticsearch.png
 ---
 
 Tarif : 1390 euros HT / Durée : 3 jours

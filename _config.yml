@@ -124,7 +124,7 @@ defaults:
 #     dir: 'contacts'
 
 # Google analytics
-# ga_tracking_id: "UA-XXXX-1"
+ga_tracking_id: "UA-107517827-1"
 
 # Plugin :: see gemfle file
 plugins:

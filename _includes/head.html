@@ -47,7 +47,8 @@
 </script>
 <script>
 fetchInject([
-	'{{ site.baseurl }}/assets/js/main.js'
+	'{{ site.baseurl }}/assets/js/main.js',
+	'//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js'
 	], fetchInject([
 		'{{ site.baseurl }}/assets/js/bootstrap.min.js',
 		'{{ site.baseurl }}/assets/js/owl.carousel.min.js',
@@ -59,8 +60,57 @@ fetchInject([
 			],
 ))).then(() => {
 	
+		
 })
 </script>
+
+<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+	window.cookieconsent.initialise({
+		"palette": {
+			"popup": {
+				"background": "#333",
+				"text": "#cfcfe8"
+			},
+			"button": {
+				"background": "#d05858"
+			}
+		},
+		"theme": "classic",
+		"content": {
+			"message": "En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de cookies pour vous proposer des services et offres adaptés à vos centres d'intérêt. ",
+			"dismiss": "J'ai compris",
+			"link": "En savoir plus"
+		}
+})});
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+window.ga =
+	window.ga ||
+	function() {
+		(ga.q = ga.q || []).push(arguments);
+	};
+	ga.l = +new Date();
+	ga("create", "{{ site.ga_tracking_id }}", "auto");
+	ga("set", "transport", "beacon");
+	ga("require", "eventTracker", {
+		attributePrefix: "data-ga-"
+	});
+	ga("require", "outboundLinkTracker");
+	ga("require", "cleanUrlTracker", {
+		stripQuery: true
+	});
+	ga("require", "pageVisibilityTracker", {
+		fieldsObj: {
+			nonInteraction: null
+		}
+	});
+	ga("send", "pageview");
+</script>
+
 {% include favicons.html %}
 
 <!--

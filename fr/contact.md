@@ -10,24 +10,24 @@ weight: 10
     <div class="row">
       <div class="block">
         <form action="https://formspree.io/contact@alkeymia.com" method="POST">
-          <legend>Contactez nous</legend>
+          <legend>{{ site.data.i18n.contact[page.lang].legend }}</legend>
           <div class="form-group">
-            <label>Votre Nom</label>
+            <label>{{ site.data.i18n.contact[page.lang].lastname}}</label>
             <input type="text" class="form-control" placeholder="ex: Jean Delafontaine" name="nom">
           </div>
           <div class="form-group">
-            <label>Votre adresse email</label>
+            <label>{{ site.data.i18n.contact[page.lang].email}}</label>
             <input type="text" class="form-control" placeholder="ex: jean.delafontaine@mail.com" name="_reply">
           </div>
           <div class="form-group">
-            <label>Un sujet</label>
+            <label>{{ site.data.i18n.contact[page.lang].subject}}</label>
             <input type="text" class="form-control" placeholder="ex: accès au lieu de formation" name="_subject">
           </div>
           <div class="form-group-2">
-            <label>Votre message</label>
+            <label>{{ site.data.i18n.contact[page.lang].message}}</label>
             <textarea class="form-control" rows="3" placeholder="J'ai un sujet à vous soumettre" name="message"></textarea>
           </div>
-          <button class="btn btn-default" type="submit">Envoyer un message</button>
+          <button class="btn btn-default" type="submit">{{ site.data.i18n.contact[page.lang].submit}}</button>
         </form>
       </div>
     </div>

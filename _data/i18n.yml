@@ -1,0 +1,53 @@
+
+contact:
+  en:
+    legend: Contact us
+    forname: Votre Nom
+    lastname: Votre prénom
+    email: Votre adresse email
+    subject: Un sujet
+    phone: Votre téléphone
+    company: Votre société
+    need: Votre besoin
+    message: Votre message
+    submit: Envoyer un message
+  fr:
+    legend: Contactez nous
+    forname: Votre Nom
+    lastname: Votre prénom
+    email: Votre adresse email
+    subject: Un sujet
+    phone: Votre téléphone
+    company: Votre société
+    need: Votre besoin
+    message: Votre message
+    submit: Envoyer un message
+
+session:
+  en:
+    teacher: Teacher
+    theme: Thème
+    date: Date
+    session: Session
+    duration: Durée
+    price: Tarif
+    city: À
+    notdefined: À définir
+  fr:
+    title: Inscrivez vous à la session
+    teacher: Enseignant
+    theme: Thème
+    date: Date
+    session: Session
+    duration: Durée
+    price: Tarif
+    city: À
+    notdefined: À définir
+
+work:
+  en:
+    title:
+  fr:
+    title: Notre métier
+    text: Découvrez ce que nous faisons et notre philosophie de conception. Nous effectuons une veille technologique constante, qui nous permet de proposer les solutions les plus perennes innovantes, répondant à des besoins pour tous secteurs d’activités.
+    linktext: En savoir plus

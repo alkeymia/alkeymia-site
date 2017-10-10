@@ -77,6 +77,6 @@ weight: 1
   </div>
 </section>
 
-{% include list-works.html %}
+{% include works-section.html %}
 
 

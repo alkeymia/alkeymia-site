@@ -1,0 +1,45 @@
+
+<div id="form" class="container">
+		<h1>{{ site.data.i18n.session[page.lang].title }}{% if page.date-session %} du {{ page.date-session | date: "%D" }}{% endif %}</h1>
+		<p class="well">
+		{% if page.teacher %}<strong>{{ site.data.i18n.session[page.lang].teacher }} :</strong> {{ page.teacher }}<br>{% endif %}
+		{% if page.title %}<strong>{{ site.data.i18n.session[page.lang].theme }} :</strong> {{ page.title }}<br>{% endif %}
+		<strong>{{ site.data.i18n.session[page.lang].date }} :</strong> {% if page.date-session %}{{ page.date-session | date: "%d/%m/%Y" }}{% else%}{{ site.data.i18n.session[page.lang].notdefined }}{% endif %}<br>
+		{% if page.session %}<strong>{{ site.data.i18n.session[page.lang].session }} :</strong> {{ page.session }}<br>{% endif %}
+		{% if page.duration %}<strong>{{ site.data.i18n.session[page.lang].duration }} :</strong> {{ page.duration }}<br>{% endif %}
+		<strong>{{ site.data.i18n.session[page.lang].price }} :</strong> {% if page.price %}{{ page.price }}{% else%}{{ site.data.i18n.session[page.lang].notdefined }}{% endif %}<br>
+		{% if page.city %}<strong>{{ site.data.i18n.session[page.lang].city }} :</strong> {{ page.city }}{% endif %}
+		</p>
+		<div class="block">
+		<form action="https://formspree.io/training@alkeymia.com" method="POST">
+			<div class="form-group">
+				<label>{{ site.data.i18n.contact[page.lang].forname }}</label>
+				<input type="text" class="form-control" placeholder="ex: Jean" name="prenom">
+			</div>
+			<div class="form-group">
+				<label>{{ site.data.i18n.contact[page.lang].lastname }}</label>
+				<input type="text" class="form-control" placeholder="ex: Delafontaine" name="nom">
+			</div>
+			<div class="form-group">
+				<label>{{ site.data.i18n.contact[page.lang].email }}</label>
+				<input type="email" class="form-control" placeholder="ex: jean.delafontaine@mail.com" name="_replyto">
+			</div>
+			<div class="form-group">
+				<label>{{ site.data.i18n.contact[page.lang].phone }}</label>
+				<input type="text" class="form-control" placeholder="ex: +33 6 07 08 09 10" name="telephone">
+			</div>
+			<div class="form-group">
+				<label>{{ site.data.i18n.contact[page.lang].company }}</label>
+				<input type="text" class="form-control" placeholder="ex: SNCF" name="_replyto">
+			</div>
+			<div class="form-group-2">
+				<label>{{ site.data.i18n.contact[page.lang].need }}</label>
+				<textarea class="form-control" rows="3" placeholder="Je désire…" name="votrebesoin"></textarea>
+			</div>
+			<input type="hidden" name="_subject" value="{{ page.theme }} {{ page.date }} {{ page.teacher }} à {{ page.city }}" />
+			<input type="hidden" name="_language" value="{{ page.lang }}" />
+			<input type="text" name="_gotcha" style="display:none" />
+			<button class="btn btn-default" type="submit">{{ site.data.i18n.contact[page.lang].need }}</button>
+		</form>
+		</div>
+	</div>

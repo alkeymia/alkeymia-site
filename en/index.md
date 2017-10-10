@@ -1,7 +1,8 @@
 ---
-title: Home
-permalink: /en/
-navigation: Home
+title: Accueil
+description: Implémentation de solutions orientées ROI, DEVOPS, à l'état de l'art technologique
+permalink: /fr/
+navigation: Accueil
 weight: 1
 ---
 
@@ -11,8 +12,9 @@ weight: 1
     <div class="row">
       <div class="col-md-10 col-md-offset-2">
         <div class="block">
-          <h1 class="animated fadeInUp">A DIGITAL MARKETING &#38; <br> DESIGN AGENCY</h1>
-          <p class="animated fadeInUp">We love the Web and the work we do. We work closely with our clients to deliver the best possible solutions for their needs</p>
+          <h1 class="animated fadeInUp">CRÉATEUR DE SOLUTIONS <br> SUR MESURE</h1>
+          <p class="animated fadeInUp">Implémentation de solutions orientées ROI, DEVOPS, à l'état de l'art technologique
+            </p>
         </div>
       </div>
     </div>
@@ -25,10 +27,10 @@ weight: 1
       <div class="col-md-7 col-sm-12">
         <div class="block">
           <div class="section-title">
-            <h2>About Us</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+            <h2>Nos atouts</h2>
+            <p>Culture de l'innovation, mutualisation des connaissances.</p>
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p>
+          <p>Sur le plan technique, nous avons construit une puissante librairie de code au travers de tous nos déploiements. Chacune de ses parties nous permet de développer plus rapidement, efficacement et durablement. En matère de recrutement, notre stratégie de développement s'appuie, depuis 10 ans, sur une croissance mesurée et maîtrisée des équipes. Nous avons choisi de travailler sur une intégration spécifique et réussie de nos collaborateurs afin de les accompagner tout au long de leur carrière sur le choix des missions et leurs formations. Cela vous garantit un processus de recrutement personnalisé prenant en compte vos compétences, mais aussi votre potentiel et vos attentes spécifiques. Nous examinons, de la même façon, toute offre de collaboration même si votre profil ne correspond pas à 100 % aux profils décrits dans les annonces. D'une manière générale, notre travail est toujours réalisé en transparence et convenu en amont tant sur les jalons que sur les coûts. Les budgets sont régulièrement contrôlés durant les phases projets afin de garantir leurs utilisations optimales.</p>
         </div>
       </div><!-- .col-md-7 close -->
       <div class="col-md-5 col-sm-12">
@@ -44,11 +46,9 @@ weight: 1
 <div class="container">
   <div class="row">
     <div class="col-md-6 col-md-offset-6">
-      <h2>WE BELIEVE IN GREAT IDEAS</h2>
-      <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-      <a href="#" class="btn btn-view-works">View Works</a>
+      <h2>BigData</h2>
+      <p>Notre cœur de métier est le Big Data. Grâce à une équipe de R&D, nous consacrons notre énergie et nos technologies à accompagner nos clients jusqu’au bout dans la mise en place de stratégies et d’exécution digitale. Nous proposons aussi des formations sur des technologies gravitant dans cet écosystème.</p>
+      <a href="/{{ page.lang }}/formations/" class="btn btn-view-works">Programmes</a>
     </div>
   </div>
 </div>
@@ -59,83 +59,24 @@ weight: 1
   <div class="container">
     <div class="row">
       <div class="section-title">
-        <h2>Our Services</h2>
-        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
+        <h2>Nos Formations</h2>
       </div>
     </div>
-    <div class="row ">
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="icon ion-coffee"></i>
-          <h4>Branding</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-compass"></i>
-          <h4>Web Design</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-image"></i>
-          <h4>App Design</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-bug"></i>
-          <h4>Start Up</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-headphone"></i>
-          <h4>Logo Design</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-leaf"></i>
-          <h4>Development</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-planet"></i>
-          <h4>Brand Identity</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-3">
-        <div class="service-item">
-          <i class="ion-earth"></i>
-          <h4>Brand Identity</h4>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Call to action Start -->
-<section id="call-to-action">
-  <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h2>We design delightful digital experiences.</h2>
-          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p>
-          <a class="btn btn-default btn-call-to-action" href="#" >Tell Us Your Story</a>
+      {% for formation in site.formations %}
+      {% if formation.path contains page.lang %}
+      <div class="col-sm-6 col-md-4">
+        <div class="service-item">
+          <a href="{{ formation.url }}"><img src="{{ site.baseurl }}/assets/formations/{{ formation.title }}.png" alt="{{ formation.title }}"></a>
+          <p>{{ formation.description | strip_html | truncatewords: 30 }}</p>
         </div>
       </div>
+      {% endif %}
+      {% endfor %}
     </div>
   </div>
 </section>
-<!-- Content Start -->
+
+{% include works-section.html %}
+
 

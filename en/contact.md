@@ -1,113 +1,71 @@
 ---
-title: Contact us!
+title: Contactez nous !
 navigation: Contact
+navigation_footer: Contact
 weight: 10
 ---
-
-<!-- Slider Start -->
-<section id="global-header">
-  <div class="container">
+<!-- contact form start -->
+<section>
+  <div id="form" class="container">
     <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h1>Drop Us A Note</h1>
-          <p>Don’t just take our word for it. Check out some of our latest work.</p>
-        </div>
+      <div class="block">
+        <form action="https://formspree.io/contact@alkeymia.com" method="POST">
+          <legend>{{ site.data.i18n.contact[page.lang].legend }}</legend>
+          <div class="form-group">
+            <label>{{ site.data.i18n.contact[page.lang].lastname}}</label>
+            <input type="text" class="form-control" placeholder="ex: Jean Delafontaine" name="nom">
+          </div>
+          <div class="form-group">
+            <label>{{ site.data.i18n.contact[page.lang].email}}</label>
+            <input type="text" class="form-control" placeholder="ex: jean.delafontaine@mail.com" name="_reply">
+          </div>
+          <div class="form-group">
+            <label>{{ site.data.i18n.contact[page.lang].subject}}</label>
+            <input type="text" class="form-control" placeholder="ex: accès au lieu de formation" name="_subject">
+          </div>
+          <div class="form-group-2">
+            <label>{{ site.data.i18n.contact[page.lang].message}}</label>
+            <textarea class="form-control" rows="3" placeholder="J'ai un sujet à vous soumettre" name="message"></textarea>
+          </div>
+          <button class="btn btn-default" type="submit">{{ site.data.i18n.contact[page.lang].submit}}</button>
+        </form>
       </div>
     </div>
   </div>
 </section>
-<!-- contact form start -->
-<section id="contact-form">
+<section>
   <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <form>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Your Name">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Email Address">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Subject">
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="block">
-          <form>
-            <div class="form-group-2">
-              <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
-            </div>
-            <button class="btn btn-default" type="submit">Send Message</button>
-          </form>
-        </div>
-      </div>
-    </div>
     <div id="contact-box" class="row">
       <div class="col-md-6 col-sm-12">
         <div class="block">
-          <h2>Stop By For A visit</h2>
+          <h2>Coordonnées</h2>
           <ul class="address-block">
             <li>
-              <i class="fa fa-map-marker"></i>North Main Street,Brooklyn Australia
+              <i class="fa fa-map-marker"></i>12 avenue Andrée, 94100 Saint-Maur-des-Fossés
             </li>
             <li>
-              <i class="fa fa-envelope-o"></i>Email: contact@mail.com
+              <i class="fa fa-envelope-o"></i>Email: <a href="mailto:contact@alkeymia.com">contact@alkeymia.com</a>
             </li>
             <li>
-              <i class="fa fa-phone"></i>Phone:+88 01672 506 744
+              <i class="fa fa-phone"></i>Téléphone: +33 1 76 54 56 82
             </li>
           </ul>
-
           <ul class="social-icons">
             <li>
-              <a href="http://www.themefisher.com"><i class="fa fa-google"></i></a>
+              <a href="https://linkedin.com/alkeymia" target="_blank"><i class="fa fa-linkedin"></i></a>
             </li>
             <li>
-              <a href="http://www.themefisher.com"><i class="fa fa-linkedin"></i></a>
-            </li>
-            <li>
-              <a href="http://www.themefisher.com"><i class="fa fa-pinterest"></i></a>
-            </li>
-            <li>
-              <a href="http://www.themefisher.com"><i class="fa fa-dribbble"></i></a>
-            </li>
-            <li>
-              <a href="http://www.themefisher.com"><i class="fa fa-behance"></i></a>
-            </li>
-            <li>
-              <a href="http://www.themefisher.com"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="http://www.themefisher.com"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/AlkeymiaEng" target="_blank"><i class="fa fa-twitter"></i></a>
             </li>
           </ul>
         </div>
       </div>
       <div class="col-md-6 col-sm-12">
         <div class="block">
-          <h2>We Also Count In Google Map</h2>
-            <div class="google-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.472979439986!2d-73.97769068489596!3d40.7516207793276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2590247c56379%3A0x15e13bea38b43e18!2sChrysler+Building!5e0!3m2!1sen!2sus!4v1477406538220" width="555" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- Call to action Start -->
-<section id="call-to-action">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h2>We design delightful digital experiences.</h2>
-          <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p>
-          <a class="btn btn-default btn-call-to-action" href="#" >Tell Us Your Story</a>
+          <h2>Le Siège</h2>
+          <div class="google-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5254.859280244906!2d2.4758768330453087!3d48.81186337928301!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60ce19354f3df%3A0x56307f962fdc1d40!2s12+Avenue+Andr%C3%A9e%2C+94100+Saint-Maur-des-Foss%C3%A9s!5e0!3m2!1sfr!2sfr!4v1507184600140" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
         </div>
       </div>
     </div>

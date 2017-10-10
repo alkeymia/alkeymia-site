@@ -40,7 +40,9 @@ layout: page
   {% for session in site.sessions %} 
   {% if page.title == session.title %}
   {% if session.simplecontact %}
+  {% if session.path contains page.lang %}
   <a href="{{ session.url }}" class="btn btn-view-works">Contactez-nous</a>
+  {% endif %}
   {% endif %}
   {% endif %}
   {% endfor %}

@@ -68,10 +68,12 @@ layout: page
   {% capture datenow %}{{'now' | date: '%s'}}{% endcapture %}
   {% capture datesession %}{{ session.date-session | date: '%s'}}{% endcapture %}
   {% if datenow < datesession %}
+  {% if session.path contains page.lang %}
     <li>
       <a href="{{ session.url }}">
         {{ session.title }} - {{ session.session }}</a>
     </li>
+  {% endif %}
   {% endif %}
   {% endif %}
   {% endif %}
@@ -81,7 +83,9 @@ layout: page
   {% for session in site.sessions %} 
   {% if page.title == session.title %}
   {% if session.simplecontact %}
+  {% if session.path contains page.lang %}
   <p class="link-contact">> <a href="{{ session.url }}">Prise de contact</a></p>
+  {% endif %}
   {% endif %}
   {% endif %}
   {% endfor %}

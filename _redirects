@@ -1,7 +1,7 @@
 
 
-https://.alkeymia.io*  https://alkeymia.com/:splat  200
-https://.alkeymia.fr*  https://alkeymia.com/:splat  200
+https://alkeymia.io*  https://alkeymia.com/fr/:splat  200
+https://alkeymia.fr*  https://alkeymia.com/fr/:splat  200
 
 /fr/formations/*  https://formations.alkeymia.com/fr/:splat  200
 /en/formations/*  https://formations.alkeymia.com/en/:splat  200

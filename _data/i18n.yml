@@ -78,8 +78,8 @@ session:
 contact:
   en:
     legend: Contact us
-    forname: Votre Nom
-    lastname: Votre prénom
+    forname: Votre prénom
+    lastname: Votre nom
     email: Votre adresse email
     subject: Un sujet
     phone: Votre téléphone
@@ -89,8 +89,8 @@ contact:
     submit: Envoyer un message
   fr:
     legend: Contactez nous
-    forname: Votre Nom
-    lastname: Votre prénom
+    forname: Votre prénom
+    lastname: Votre nom
     email: Votre adresse email
     subject: Un sujet
     phone: Votre téléphone

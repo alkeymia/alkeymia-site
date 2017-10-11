@@ -30,16 +30,16 @@
 			</div>
 			<div class="form-group">
 				<label>{{ site.data.i18n.contact[page.lang].company }}</label>
-				<input type="text" class="form-control" placeholder="ex: SNCF" name="_replyto">
+				<input type="text" class="form-control" placeholder="ex: SNCF" name="company">
 			</div>
 			<div class="form-group-2">
 				<label>{{ site.data.i18n.contact[page.lang].need }}</label>
 				<textarea class="form-control" rows="3" placeholder="Je désire…" name="votrebesoin"></textarea>
 			</div>
-			<input type="hidden" name="_subject" value="{{ page.theme }} {{ page.date }} {{ page.teacher }} à {{ page.city }}" />
+			<input type="hidden" name="_subject" value="{{ page.title }} le {{ page.date | date: "%d-%m-%Y" }}" />
 			<input type="hidden" name="_language" value="{{ page.lang }}" />
 			<input type="text" name="_gotcha" style="display:none" />
-			<button class="btn btn-default" type="submit">{{ site.data.i18n.contact[page.lang].need }}</button>
+			<button class="btn btn-default" type="submit">{{ site.data.i18n.contact[page.lang].submit }}</button>
 		</form>
 		</div>
 	</div>

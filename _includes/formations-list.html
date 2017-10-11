@@ -7,7 +7,8 @@
               <div class="portfolio-contant">
                 <ul id="portfolio-contant-active">
                     {% for formation in site.formations %}
-                    {% if formation.path contains page.lang %}
+                    {% assign pathlang = page.lang | prepend: '/' | append: '/' %}
+                    {% if formation.path contains pathlang %}
                     <li class="mix {{ formation.level }}">
                       <a href="{{ formation.url }}">
                         <img src="{{ site.baseurl }}/assets/formations/{{ formation.title }}.png" alt="">

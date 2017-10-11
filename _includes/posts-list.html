@@ -11,7 +11,8 @@
 	</div>
 </section>
 {% for post in site.posts %}
-{% if post.path contains page.lang %}
+{% assign pathlang = page.lang | prepend: '/' | append: '/' %}
+{% if post.path contains pathlang %}
 <div class="post-area container container-narrow">
 	<a href="{{ post.url | prepend: site.baseurl }}" class="bold">{{ post.title }}</a>
 	<p class="post-date">{{ post.date | date: "%d/%m/%Y" }}</p>

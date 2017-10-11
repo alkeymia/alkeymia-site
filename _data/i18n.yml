@@ -1,4 +1,80 @@
+# Home page
+header:
+  en:
+    title: CRÉATEUR DE SOLUTIONS <br> SUR MESURE
+    slogan: Implémentation de solutions orientées ROI, DEVOPS, à l'état de l'art technologique
+  fr:
+    title: CRÉATEUR DE SOLUTIONS <br> SUR MESURE
+    slogan: Implémentation de solutions orientées ROI, DEVOPS, à l'état de l'art technologique
 
+intro:
+  en:
+    title: Nos atouts
+    slogan: Culture de l'innovation, mutualisation des connaissances.
+    text: Sur le plan technique, nous avons construit une puissante librairie de code au travers de tous nos déploiements. Chacune de ses parties nous permet de développer plus rapidement, efficacement et durablement. En matère de recrutement, notre stratégie de développement s'appuie, depuis 10 ans, sur une croissance mesurée et maîtrisée des équipes. Nous avons choisi de travailler sur une intégration spécifique et réussie de nos collaborateurs afin de les accompagner tout au long de leur carrière sur le choix des missions et leurs formations. Cela vous garantit un processus de recrutement personnalisé prenant en compte vos compétences, mais aussi votre potentiel et vos attentes spécifiques. Nous examinons, de la même façon, toute offre de collaboration même si votre profil ne correspond pas à 100 % aux profils décrits dans les annonces. D'une manière générale, notre travail est toujours réalisé en transparence et convenu en amont tant sur les jalons que sur les coûts. Les budgets sont régulièrement contrôlés durant les phases projets afin de garantir leurs utilisations optimales.
+  fr:
+    title: Nos atouts
+    slogan: Culture de l'innovation, mutualisation des connaissances.
+    text: Sur le plan technique, nous avons construit une puissante librairie de code au travers de tous nos déploiements. Chacune de ses parties nous permet de développer plus rapidement, efficacement et durablement. En matère de recrutement, notre stratégie de développement s'appuie, depuis 10 ans, sur une croissance mesurée et maîtrisée des équipes. Nous avons choisi de travailler sur une intégration spécifique et réussie de nos collaborateurs afin de les accompagner tout au long de leur carrière sur le choix des missions et leurs formations. Cela vous garantit un processus de recrutement personnalisé prenant en compte vos compétences, mais aussi votre potentiel et vos attentes spécifiques. Nous examinons, de la même façon, toute offre de collaboration même si votre profil ne correspond pas à 100 % aux profils décrits dans les annonces. D'une manière générale, notre travail est toujours réalisé en transparence et convenu en amont tant sur les jalons que sur les coûts. Les budgets sont régulièrement contrôlés durant les phases projets afin de garantir leurs utilisations optimales.
+
+feature:
+  en:
+    title: BigData
+    text: Notre cœur de métier est le Big Data. Grâce à une équipe de R&D, nous consacrons notre énergie et nos technologies à accompagner nos clients jusqu’au bout dans la mise en place de stratégies et d’exécution digitale. Nous proposons aussi des formations sur des technologies gravitant dans cet écosystème.
+    linktext: Programmes
+  fr:
+    title: BigData
+    text: Notre cœur de métier est le Big Data. Grâce à une équipe de R&D, nous consacrons notre énergie et nos technologies à accompagner nos clients jusqu’au bout dans la mise en place de stratégies et d’exécution digitale. Nous proposons aussi des formations sur des technologies gravitant dans cet écosystème.
+    linktext: Programmes
+
+service:
+  en:
+    title: Nos Formations
+  fr:
+    title: Nos Formations
+
+# Our work page
+work:
+  en:
+    intro: Sur le plan technique, nous avons construit une puissante librairie de code au travers de tous nos déploiements. Chacune de ses parties nous permet de développer plus rapidement, efficacement et durablement. En matère de recrutement, notre stratégie de développement s'appuie, depuis 10 ans, sur une croissance mesurée et maîtrisée des équipes. Nous avons choisi de travailler sur une intégration spécifique et réussie de nos collaborateurs afin de les accompagner tout au long de leur carrière sur le choix des missions et leurs formations.
+    title1: La culture du progrès
+    paragraph1: Tous nos consultants informatique sont recrutés sur profil pour leurs compétences, leur ouverture d’esprit, et surtout leur envie de progresser. Un suivi au plus près de leurs aspirations leur permet de se former en continu, de capitaliser leur savoir et de le diffuser au travers de multiples contributions (conférences, livres blancs, blog, etc.).
+    title2: Formateurs passionnés
+    paragraph2: Nous aimons tous notre métier passionnément, et aimons transmettre ce que nous connaissons à d'autres développeurs. Vous pouvez faire appel à nous pour vous former, en choisissant une formation dans notre catalogue, ou en établissant un programme à la carte.
+    title3: L'excellence dans la réalisation
+    paragraph3: La qualité chez Alkeymia passe d’abord par l’écoute de vos besoins, la proximité de nos consultants avec vos équipes, la compréhension de votre environnement et la qualité du code délivré. Cet esprit nous guide dans chacune de nos interventions pour inscrire votre SI dans la durée et en extraire le plus de valeur possible.
+  fr:
+    intro: Sur le plan technique, nous avons construit une puissante librairie de code au travers de tous nos déploiements. Chacune de ses parties nous permet de développer plus rapidement, efficacement et durablement. En matère de recrutement, notre stratégie de développement s'appuie, depuis 10 ans, sur une croissance mesurée et maîtrisée des équipes. Nous avons choisi de travailler sur une intégration spécifique et réussie de nos collaborateurs afin de les accompagner tout au long de leur carrière sur le choix des missions et leurs formations.
+    title1: La culture du progrès
+    paragraph1: Tous nos consultants informatique sont recrutés sur profil pour leurs compétences, leur ouverture d’esprit, et surtout leur envie de progresser. Un suivi au plus près de leurs aspirations leur permet de se former en continu, de capitaliser leur savoir et de le diffuser au travers de multiples contributions (conférences, livres blancs, blog, etc.).
+    title2: Formateurs passionnés
+    paragraph2: Nous aimons tous notre métier passionnément, et aimons transmettre ce que nous connaissons à d'autres développeurs. Vous pouvez faire appel à nous pour vous former, en choisissant une formation dans notre catalogue, ou en établissant un programme à la carte.
+    title3: L'excellence dans la réalisation
+    paragraph3: La qualité chez Alkeymia passe d’abord par l’écoute de vos besoins, la proximité de nos consultants avec vos équipes, la compréhension de votre environnement et la qualité du code délivré. Cet esprit nous guide dans chacune de nos interventions pour inscrire votre SI dans la durée et en extraire le plus de valeur possible.
+
+# Session page
+session:
+  en:
+    teacher: Teacher
+    theme: Thème
+    date: Date
+    session: Session
+    duration: Durée
+    price: Tarif
+    city: À
+    notdefined: À définir
+  fr:
+    title: Inscrivez vous à la session
+    teacher: Enseignant
+    theme: Thème
+    date: Date
+    session: Session
+    duration: Durée
+    price: Tarif
+    city: À
+    notdefined: À définir
+
+# Contact page
 contact:
   en:
     legend: Contact us
@@ -23,28 +99,8 @@ contact:
     message: Votre message
     submit: Envoyer un message
 
-session:
-  en:
-    teacher: Teacher
-    theme: Thème
-    date: Date
-    session: Session
-    duration: Durée
-    price: Tarif
-    city: À
-    notdefined: À définir
-  fr:
-    title: Inscrivez vous à la session
-    teacher: Enseignant
-    theme: Thème
-    date: Date
-    session: Session
-    duration: Durée
-    price: Tarif
-    city: À
-    notdefined: À définir
-
-work:
+# Work section
+worksection:
   en:
     title: Notre métier
     text: Découvrez ce que nous faisons et notre philosophie de conception. Nous effectuons une veille technologique constante, qui nous permet de proposer les solutions les plus perennes innovantes, répondant à des besoins pour tous secteurs d’activités.

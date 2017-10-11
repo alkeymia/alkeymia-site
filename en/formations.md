@@ -1,5 +1,5 @@
 ---
-title: Nos formations
+title: Our formations
 navigation: Formations
 weight: 4
 ---

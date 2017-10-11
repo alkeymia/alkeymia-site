@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mentions Légales
+title: Legals
 navigation_footer: Mentions Légales
 weight: 2
 ---

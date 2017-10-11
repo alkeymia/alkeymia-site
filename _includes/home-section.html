@@ -1,0 +1,73 @@
+<!-- Slider Start -->
+<section id="slider">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-2">
+        <div class="block">
+          <h1 class="animated fadeInUp">{{ site.data.i18n.header[page.lang].title }}</h1>
+          <p class="animated fadeInUp">{{ site.data.i18n.header[page.lang].slogan }}
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Wrapper Start -->
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>{{ site.data.i18n.intro[page.lang].title }}</h2>
+            <p>{{ site.data.i18n.intro[page.lang].slogan }}</p>
+          </div>
+          <p>{{ site.data.i18n.intro[page.lang].text }}</p>
+        </div>
+      </div><!-- .col-md-7 close -->
+      <div class="col-md-5 col-sm-12">
+        <div class="block">
+          <img src="/assets/img/wrapper-img.png" alt="Img">
+        </div>
+      </div><!-- .col-md-5 close -->
+    </div>
+  </div>
+</section>
+
+<section id="feature">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-6">
+      <h2>{{ site.data.i18n.feature[page.lang].title }}</h2>
+      <p>{{ site.data.i18n.feature[page.lang].text }}</p>
+      <a href="/{{ page.lang }}/formations/" class="btn btn-view-works">{{ site.data.i18n.feature[page.lang].linktext }}</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Service Start -->
+<section id="service">
+  <div class="container">
+    <div class="row">
+      <div class="section-title">
+        <h2>{{ site.data.i18n.service[page.lang].title }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      {% for formation in site.formations %}
+      {% assign pathlang = page.lang | prepend: '/' | append: '/' %}
+      {% if formation.path contains pathlang %}
+      <div class="col-sm-6 col-md-4">
+        <div class="service-item">
+          <a href="{{ formation.url }}"><img src="{{ site.baseurl }}/assets/formations/{{ formation.title }}.png" alt="{{ formation.title }}"></a>
+          <p>{{ formation.description | strip_html | truncatewords: 30 }}</p>
+        </div>
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% include works-section.html %}

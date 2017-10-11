@@ -4,7 +4,7 @@
 		<p class="well" itemscope itemtype="http://schema.org/Event">
 		{% if page.teacher %}<strong>{{ site.data.i18n.session[page.lang].teacher }} :</strong> <span itemprop="attendee">{{ page.teacher }}</span><br>{% endif %}
 		{% if page.title %}<strong>{{ site.data.i18n.session[page.lang].theme }} :</strong> <span itemprop="name">{{ page.title }}</span><br>{% endif %}
-		<strong>{{ site.data.i18n.session[page.lang].date }} :</strong> {% if page.date-session %}<span itemprop="startDate">{{ page.date-session | date: "%d/%m/%Y" }}</span>{% else%}{{ site.data.i18n.session[page.lang].notdefined }}{% endif %}<br>
+		<strong>{{ site.data.i18n.session[page.lang].date }} :</strong> {% if page.date-session %}<span itemprop="startDate" content="{{ page.date-session | date: "%d-%m-%Y" }}">{{ page.date-session | date: "%d/%m/%Y" }}</span>{% else%}{{ site.data.i18n.session[page.lang].notdefined }}{% endif %}<br>
 		{% if page.session %}<strong>{{ site.data.i18n.session[page.lang].session }} :</strong> {{ page.session }}<br>{% endif %}
 		{% if page.duration %}<strong>{{ site.data.i18n.session[page.lang].duration }} :</strong> <span itemprop="duration">{{ page.duration }}</span><br>{% endif %}
 		<strong>{{ site.data.i18n.session[page.lang].price }} :</strong> {% if page.price %}<span itemprop="price">{{ page.price }}</span>{% else%}{{ site.data.i18n.session[page.lang].notdefined }}{% endif %}<br>

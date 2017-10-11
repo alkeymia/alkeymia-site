@@ -44,7 +44,7 @@
 		var countryCode = localStorage.getItem("countryCode");
 		var languageSelect = localStorage.getItem("languageSelect");
 		if (countryCode.substring(0, 2) !== languageCode && !languageSelect) {
-			window.location.href = '{{ site.url }}/' + countryCode.substring(0, 2) + '/'
+			//window.location.href = '{{ site.url }}/' + countryCode.substring(0, 2) + '/'
 		}
 	}
 </script>

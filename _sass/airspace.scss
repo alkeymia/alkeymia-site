@@ -71,6 +71,9 @@ a:active {
 a:hover {
   color: #d05858;
 }
+iframe {
+  max-width: 100%;
+}
 /*--
 	Header Start
 --*/
@@ -635,9 +638,14 @@ font header .navbar-default .navbar-nav li a:hover {
   -ms-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
+#portfolio-work .block .portfolio-contant ul {
+  padding: 0;
+}
 #portfolio-work .block .portfolio-contant ul li {
-  float: left;
-  width: 32.22%;
+  @media only screen and (min-width: 768px) {
+    float: left;
+    width: 32.22%;
+  }
   min-height: 26vmin;
   overflow: hidden;
   margin: 6px 4px;

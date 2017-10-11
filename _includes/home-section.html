@@ -61,7 +61,7 @@
       <div class="col-sm-6 col-md-4">
         <div class="service-item">
           <a href="{{ formation.url }}"><img src="{{ site.baseurl }}/assets/formations/{{ formation.title }}.png" alt="{{ formation.title }}"></a>
-          <p>{{ formation.description | strip_html | truncatewords: 30 }}</p>
+          <p>{{ formation.excerpt | strip_html | truncatewords: 30 }}</p>
         </div>
       </div>
       {% endif %}

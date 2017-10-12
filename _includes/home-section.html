@@ -54,15 +54,13 @@
         <h2>{{ site.data.i18n.service[page.lang].title }}</h2>
       </div>
     </div>
-    <div class="row">
+    <div class="block-formation">
       {% for formation in site.formations %}
       {% assign pathlang = page.lang | prepend: '/' | append: '/' %}
       {% if formation.path contains pathlang %}
-      <div class="col-sm-6 col-md-4">
-        <div class="service-item">
-          <a href="{{ formation.url }}"><img src="{{ site.baseurl }}/assets/formations/{{ formation.title }}.png" alt="{{ formation.title }}"></a>
-          <p>{{ formation.excerpt | strip_html | truncatewords: 30 }}</p>
-        </div>
+      <div class="service-item">
+        <a href="{{ formation.url }}"><img src="{{ site.baseurl }}/assets/formations/{{ formation.title }}.png" alt="{{ formation.title }}"></a>
+        <p>{{ formation.excerpt | strip_html | truncatewords: 30 }}</p>
       </div>
       {% endif %}
       {% endfor %}

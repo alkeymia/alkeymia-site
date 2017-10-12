@@ -7,27 +7,27 @@ Jekyll est un générateur de site statique Open Source écrit en Ruby([https://
 
 **Architecture des répertoires :**
 ```
-_data 			# Fichiers YML
+_data       # Fichiers YML
 _formations # Fichiers markdown des formations
-_includes		# Blocs de code appelés dasn différentes pages
-_layouts		# Gabarits des pages
-_posts			# Billets de Blog
-_sass				# Fichiers de styles compilé en Sass
-_sessions		# Fichiers des sessions en lien avec une formation
-admin				# Répertoire pour Netlify CMS
-assets			# Fichiers ressources : imahes, css, favicons…
-en					# Pages en anglais
-fr					# Pages en français
+_includes   # Blocs de code appelés dasn différentes pages
+_layouts    # Gabarits des pages
+_posts      # Billets de Blog
+_sass       # Fichiers de styles compilé en Sass
+_sessions   # Fichiers des sessions en lien avec une formation
+admin	      # Répertoire pour Netlify CMS
+assets      # Fichiers ressources : imahes, css, favicons…
+en          # Pages en anglais
+fr          # Pages en français
 ```
 
 **Architecture des fichiers à la racine :**
 ```
-.gitignore 	# Fichier d'exclusion pour git
-Gemfile			# Déclaration des plugins Jekyll
-_config.yml	# Configuration générale
-index.html	# Pages d'accueil
-LICENSE.md	# License
-README.md		# Explicatif de fonctionnement
+.gitignore  # Fichier d'exclusion pour git
+Gemfile     # Déclaration des plugins Jekyll
+_config.yml # Configuration générale
+index.html  # Pages d'accueil
+LICENSE.md  # License
+README.md   # Explicatif de fonctionnement
 ```
 
 ## Édition
@@ -43,14 +43,14 @@ Les langues sont complétements indépendantes, mais doivent être identiques po
 
 ```
 _formations
-	en
-		cassandra.md
-		elasticsearch.md
-		kafka.md
-	fr
-	 	cassandra.md
-		elasticsearch.md
-		kafka.md
+en
+  cassandra.md
+  elasticsearch.md
+  kafka.md
+fr
+  cassandra.md
+  elasticsearch.md
+  kafka.md
 ```
 
 Dans chaque répertoire de langue, il est possible d'ajouter autant de formation que souhaité. Le nom de fichier sert au référencement (url). Il doit être unique.

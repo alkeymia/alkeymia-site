@@ -21,30 +21,28 @@
 	var countryCode    = navigator.language || navigator.userLanguage;
 	var languageCode   = document.documentElement.lang
 	
-	// Uncomment this code with code of the menu in header.html
 	// Function for setting user choose with language navigation selector
-	// function load() { 
-	// 	var languageSelect = document.getElementById("nav-language");
-	// 	languageSelect.addEventListener("mouseup", function(){
-	// 		if (typeof(Storage) !== "undefined") {
-	// 			// Set that the language variable
-	// 			localStorage.setItem("languageSelect", 'true');
-	// 		}		
-	// 	});
-	// } 
-	// Test if localStorage is supported by the user's browser
+	function load() { 
+		var languageSelect = document.getElementById("nav-language");
+		languageSelect.addEventListener("mouseup", function(){
+			if (typeof(Storage) !== "undefined") {
+				// Set that the language variable
+				localStorage.setItem("languageSelect", 'true');
+			}		
+		});
+	} 
+	//Test if localStorage is supported by the user's browser
 	if (typeof(Storage) !== "undefined") {
 		// localStorage is available
-		// Uncomment this line
-		//localStorage.setItem("countryCode", countryCode);
-		// Remove this line
-		localStorage.setItem("countryCode", 'fr');
+		localStorage.setItem("countryCode", countryCode);
 	}
 	if (typeof(Storage) !== "undefined") {
 		var countryCode = localStorage.getItem("countryCode");
 		var languageSelect = localStorage.getItem("languageSelect");
+		{% assign lang = page.lang | append: '/' %}
+		{% assign namepage = page.path | remove: lang | remove: '.md'%}
 		if (countryCode.substring(0, 2) !== languageCode && !languageSelect) {
-			//window.location.href = '{{ site.url }}/' + countryCode.substring(0, 2) + '/'
+			window.location.href = '{{ site.url }}/' + countryCode.substring(0, 2) + '/{{ namepage }}/'
 		}
 	}
 </script>

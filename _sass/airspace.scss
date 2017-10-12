@@ -465,8 +465,8 @@ font header .navbar-default .navbar-nav li a:hover {
   }
 }
 #nav-language {
-  margin: 0;
-  padding: 0;
+  margin: 0 0 -1rem;
+  padding: 1rem 0 0;
   text-align: right;
   @media only screen and (min-width: 768px) {
     margin-right: 34px;

@@ -2,26 +2,88 @@ backend:
   name: github
   repo: alkeymia/alkeymia-site # Path to your Github repository
   branch: master # Branch to update (master by default)
-  site_domain: alkeymia.netlify.com
+  site_domain: alkeymia.com
 
 media_folder: "assets/uploads" # Folder where user uploaded files should go
 
 collections:
-  - name: "post" # Used in routes, e.g. /admin/collections/blog
-    label: "Post" # Used in the UI
+  - name: "post-en" # Used in routes, e.g. /admin/collections/blog
+    label: "Post FR" # Used in the UI
     folder: "_posts/fr" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "post" # Used in routes, e.g. /admin/collections/blog
-    label: "Post" # Used in the UI
+  - name: "post-en" # Used in routes, e.g. /admin/collections/blog
+    label: "Post EN" # Used in the UI
     folder: "_posts/en" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
+  collections:
+  - name: "page-fr" # Used in routes, e.g. /admin/collections/blog
+    label: "Page FR" # Used in the UI
+    folder: "fr" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Permalink", name: "permalink", widget: "string"}
+      - {label: "Menu", name: "navigation", widget: "string"}
+      - {label: "Position menu", name: "weight", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "page-en" # Used in routes, e.g. /admin/collections/blog
+    label: "Page EN" # Used in the UI
+    folder: "en" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Permalink", name: "permalink", widget: "string"}
+      - {label: "Menu", name: "navigation", widget: "string"}
+      - {label: "Position menu", name: "weight", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "formation-fr" # Used in routes, e.g. /admin/collections/blog
+    label: "Formation FR" # Used in the UI
+    folder: "_formations/fr" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Résumé", name: "excerpt", widget: "string"}
+      - {label: "Illustration", name: "image", widget: "upload"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "formation-en" # Used in routes, e.g. /admin/collections/blog
+    label: "Formation EN" # Used in the UI
+    folder: "_formations/en" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Résumé", name: "excerpt", widget: "string"}
+      - {label: "Illustration", name: "image", widget: "upload"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "session-fr" # Used in routes, e.g. /admin/collections/blog
+    label: "Session FR" # Used in the UI
+    folder: "_sessions/fr" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date-session", widget: "date"}
+      - {label: "Session", name: "session", widget: "string"}
+      - {label: "Durée", name: "duration", widget: "string"}
+      - {label: "Code formation", name: "code-formation", widget: "string"}
+      - {label: "Prix", name: "price", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  - name: "session-en" # Used in routes, e.g. /admin/collections/blog
+    label: "Session EN" # Used in the UI
+    folder: "_sessions/en" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields for each document, usually in front matter
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date-session", widget: "date"}
+      - {label: "Session", name: "session", widget: "string"}
+      - {label: "Durée", name: "duration", widget: "string"}
+      - {label: "Code formation", name: "code-formation", widget: "string"}
+      - {label: "Prix", name: "price", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+  

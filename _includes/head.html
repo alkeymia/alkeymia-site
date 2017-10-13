@@ -22,19 +22,19 @@
 	var languageCode   = document.documentElement.lang
 	
 	// Function for setting user choose with language navigation selector
-	function load() { 
-		var languageSelect = document.getElementById("nav-language");
-		languageSelect.addEventListener("mouseup", function(){
-			if (typeof(Storage) !== "undefined") {
-				// Set that the language variable
-				localStorage.setItem("languageSelect", 'true');
-			}		
-		});
-	} 
+// 	function load() { 
+// 		var languageSelect = document.getElementById("nav-language");
+// 		languageSelect.addEventListener("mouseup", function(){
+// 			if (typeof(Storage) !== "undefined") {
+// 				// Set that the language variable
+// 				localStorage.setItem("languageSelect", 'true');
+// 			}		
+// 		});
+// 	} 
 	//Test if localStorage is supported by the user's browser
 	if (typeof(Storage) !== "undefined") {
 		// localStorage is available
-		localStorage.setItem("countryCode", countryCode);
+		localStorage.setItem("countryCode", 'fr');
 	}
 	if (typeof(Storage) !== "undefined") {
 		var countryCode = localStorage.getItem("countryCode");

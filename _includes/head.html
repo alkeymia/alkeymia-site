@@ -89,32 +89,10 @@ window.addEventListener("load", function(){
 <!--  >script async src="https://www.google-analytics.com/analytics.js"></script-->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.ga_tracking_id }}"></script>
 <script>
-/*window.ga =
-	window.ga ||
-	function() {
-		(ga.q = ga.q || []).push(arguments);
-	};
-	ga.l = +new Date();
-	ga("create", "{{ site.ga_tracking_id }}", "auto");
-	ga("set", "transport", "beacon");
-	ga("require", "eventTracker", {
-		attributePrefix: "data-ga-"
-	});
-	ga("require", "outboundLinkTracker");
-	ga("require", "cleanUrlTracker", {
-		stripQuery: true
-	});
-	ga("require", "pageVisibilityTracker", {
-		fieldsObj: {
-			nonInteraction: null
-		}
-	});
-	ga("send", "pageview");*/
 <!-- Global site tag (gtag.js) - Google Analytics -->
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-
 gtag('config', '{{ site.ga_tracking_id }}');
 </script>
 

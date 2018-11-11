@@ -1,6 +1,6 @@
 ---
 title: Kafka
-excerpt: 'version 1.x : détail des concepts sous-jacents, utilisation de producteurs et consommateurs, administration'
+excerpt: 'détail des concepts sous-jacents, utilisation de producteurs et consommateurs, administration'
 image: /assets/formations/kafka.png
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: ElasticSearch
-excerpt: "version 5.x : description de l'architecture et des concepts, recherches et mappings avancés, optimisation, administration"
+excerpt: "description de l'architecture et des concepts, recherches et mappings avancés, optimisation, administration"
 image: /assets/formations/elasticsearch.png
 ---
 

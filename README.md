@@ -9,7 +9,7 @@ Jekyll est un générateur de site statique Open Source écrit en Ruby([https://
 ```
 _data       # Fichiers YML
 _formations # Fichiers markdown des formations
-_includes   # Blocs de code appelés dasn différentes pages
+_includes   # Blocs de code appelés dans différentes pages
 _layouts    # Gabarits des pages
 _posts      # Billets de Blog
 _sass       # Fichiers de styles compilé en Sass
@@ -60,7 +60,7 @@ Pour créer une formation, créer un fichier avec le nom de son choix (ex: mongo
 ```
 ---
 title: Cassandra # Titre qui s'affichera sur la page et identifiant pour la relation avec les sessions (attention aux majuscules)
-excerpt: "version 3.x : presentation de l'architecture NoSQL, topologies des clusters, interrogation et mise à jour, administration" # Résumé, affiché sur le blocs de la page d'accuiel, sert pour le référencementet les réseaux sociaux
+excerpt: "presentation de l'architecture NoSQL, topologies des clusters, interrogation et mise à jour, administration" # Résumé, affiché sur le blocs de la page d'acceuil, sert pour le référencementet les réseaux sociaux
 image: /assets/formations/cassandra.png
 ---
 ```
@@ -118,3 +118,37 @@ Un plugin de gestion des metadata est présent. Les valeurs sont remplies automa
 
 Le plus important est de bien nommer les fichiers. Les noms de fichiers servent à l'écriture des URL.
 Pour le reste, c'est la qualité du code est du contenu brut qui va jouer pour le référencement.
+
+### Installation
+
+sudo apt-get -y install screen build-essential libpcre3-dev libssl-dev make zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget llvm libncurses5-dev
+
+sudo apt-get -y install ruby-dev zlib1g-dev liblzma-dev
+
+sudo gem install jekyll
+
+sudo gem install bundler
+
+sudo gem install html-proofer
+
+sudo gem install jekyll-sitemap
+
+sudo gem install jekyll-feed
+
+sudo gem install jekyll-seo-tag
+
+sudo gem install jekyll-github-metadata
+
+sudo gem install jekyll-default-layout
+
+sudo gem install jekyll-redirect-from
+
+bundle exec jekyll serve
+
+## Rafraichissement manuel
+
+bundle exec jekyll clean
+
+bundle exec jekyll build
+
+

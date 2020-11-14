@@ -3,7 +3,7 @@ Implémentation de solutions orientées ROI, DEVOPS, à l'état de l'art technol
 
 ## Jekyll
 
-Jekyll est un générateur de site statique Open Source écrit en Ruby([https://jekyllrb.com](https://jekyllrb.com)). 
+Jekyll est un générateur de site statique et blogs Open Source écrit en Ruby([https://jekyllrb.com](https://jekyllrb.com)). 
 
 **Architecture des répertoires :**
 ```

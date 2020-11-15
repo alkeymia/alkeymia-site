@@ -143,7 +143,19 @@ sudo gem install jekyll-default-layout
 
 sudo gem install jekyll-redirect-from
 
+sudo gem install kramdown-parser-gfm
+
+Under windows:
+
+gem install tzinfo
+
+gem install tzinfo-data
+
+gem install wdm
+
 bundle exec jekyll serve
+
+bundle exec jekyll serve -P <otherport>
 
 ## Rafraichissement manuel
 

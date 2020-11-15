@@ -11,8 +11,9 @@ end
 group :jekyll_plugins do
     gem 'jekyll-sitemap'
     gem 'jekyll-feed'
-    gem "jekyll-seo-tag"
+    gem 'jekyll-seo-tag'
     gem 'jekyll-github-metadata'
-    gem "jekyll-default-layout"
+    gem 'jekyll-default-layout'
     gem 'jekyll-redirect-from'
+    gem 'kramdown-parser-gfm'
 end

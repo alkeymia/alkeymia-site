@@ -11,7 +11,7 @@ weight: 2
 
 #### I.1 – Propriétaire du site
 
-Ce site est édité par Alkeymia EURL
+Ce site est édité par JCS INVEST
 
 Raison Sociale : Alkeymia
 
